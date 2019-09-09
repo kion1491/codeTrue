@@ -1,3 +1,3 @@
 
-# 호출스택
-코드트루에서는 자바스크립트 및 관련기술들에 대한 심화학습을 다루고자 합니다.
+# [공통] 마크다운 markdown 작성법
+https://gist.github.com/ihoneymon/652be052a0727ad59601#file-gistfile1-md
