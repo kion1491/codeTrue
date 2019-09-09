@@ -5,7 +5,7 @@
 
 ## 목차
 
-**[마크다운 작성법](/example_code/README.md)**
+**[공통 : 마크다운 작성법](/example_code/README.md)**
 
 1. **[호출 스택](/example_code/README.md)**
 1. **[원시 자료형](#2-원시-자료형)**
