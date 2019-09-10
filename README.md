@@ -6,12 +6,11 @@
 
 1. **[마크다운 작성법](https://gist.github.com/ihoneymon/652be052a0727ad59601#file-gistfile1-md)**
 
-## 프론트엔드  
+## 프론트엔드 테크트리
 
 1. **[프론트엔드 로드맵](https://github.com/devJang/developer-roadmap)**
 
 ## 모든 자바스크립트 개발자가 알아야 하는 33가지 개념
-
 
 1. **[호출 스택](/example_code/README.md)**
 1. **[원시 자료형](#2-원시-자료형)**
