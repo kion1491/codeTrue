@@ -4,11 +4,12 @@
 
 ## 공통
 
-1. [마크다운 작성법](http://ccl.cckorea.org/syntax/){: target=_blank }
+1. [마크다운 작성법](http://ccl.cckorea.org/syntax/)
+2. ['test'](http://www.nate.com/){: target="_blank" }
 
 ## 프론트엔드 테크트리
 
-1. [프론트엔드 로드맵](https://github.com/devJang/developer-roadmap){: target="_blank" }
+1. [프론트엔드 로드맵](https://github.com/devJang/developer-roadmap)
 
 ## 모든 자바스크립트 개발자가 알아야 하는 33가지 개념
 
