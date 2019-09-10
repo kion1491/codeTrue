@@ -5,6 +5,7 @@
 ### 공통
 
 1. [마크다운 작성법](http://ccl.cckorea.org/syntax/)
+1. [깃허브 마크다운 도움말](https://guides.github.com/features/mastering-markdown/)
 
 
 ### 프론트엔드 테크트리
