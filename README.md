@@ -5,7 +5,7 @@
 ## 공통
 
 1. [마크다운 작성법](http://ccl.cckorea.org/syntax/)
-2. ['test'](https://naver.com/ "title" target="_blank")
+2. ['test'](https://naver.com/ target=_blank)
 
 ## 프론트엔드 테크트리
 
