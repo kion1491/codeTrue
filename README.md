@@ -11,7 +11,7 @@
 
 1. [프론트엔드 로드맵](https://github.com/devJang/developer-roadmap)
 
-## [모든 자바스크립트 개발자가 알아야 하는 33가지 개념](https://github.com/yjs03057/33-js-concepts)
+## [모든 자바스크립트 개발자가 알아야 하는 33가지 개념 - 클릭시 ](https://github.com/yjs03057/33-js-concepts)
 
 1. **[호출 스택](/example_code/README.md)**
 1. **[원시 자료형](#2-원시-자료형)**
