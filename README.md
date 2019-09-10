@@ -1,17 +1,17 @@
-# Intro
+## Intro
 
 코드트루에서는 웹 프론트엔드 관련기술에 대하여 주로 다루며, 그 외의 기술도 지향합니다.
 
-## 공통
+### 공통
 
 1. [마크다운 작성법](http://ccl.cckorea.org/syntax/)
 
 
-## 프론트엔드 테크트리
+### 프론트엔드 테크트리
 
 1. [프론트엔드 로드맵](https://github.com/devJang/developer-roadmap)
 
-## [모든 자바스크립트 개발자가 알아야 하는 33가지 개념 - 클릭시 ](https://github.com/yjs03057/33-js-concepts)
+### [모든 자바스크립트 개발자가 알아야 하는 33가지 개념 - 클릭시원문](https://github.com/yjs03057/33-js-concepts)
 
 1. **[호출 스택](/example_code/README.md)**
 1. **[원시 자료형](#2-원시-자료형)**
