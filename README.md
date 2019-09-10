@@ -4,7 +4,7 @@
 
 ## Markdown
 
-1. **[공통 : 마크다운 작성법](/example_code/README.md)**
+1. **[마크다운 작성법](/example_code/README.md)**
 
 
 
