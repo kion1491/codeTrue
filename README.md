@@ -4,7 +4,7 @@
 
 ## 공통
 
-1. [마크다운 작성법] (http://ccl.cckorea.org/syntax/) {: target="_blank" }
+1. [마크다운 작성법](http://ccl.cckorea.org/syntax/:target='_blank')
 
 ## 프론트엔드 테크트리
 
