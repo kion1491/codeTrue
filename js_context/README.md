@@ -41,4 +41,4 @@ ECMAScript 스펙에 따르면 실행 컨텍스트를 실행 가능한 코드를
 - [실행 컨텍스트와 클로저](https://www.zerocho.com/category/JavaScript/post/5741d96d094da4986bc950a0)  
 
 
- **[⬆  Back to Top](#Intro)**
+ **[⬆  Back to Top](#실행-컨텍스트execution-context)**
