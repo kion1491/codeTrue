@@ -9,9 +9,8 @@ window 객체에 변수를 생성하는것을 말합니다.
 
 * **지역변수**는 함수 안에 들어있는 변수를 의미합니다.
 
-
-```javascript
 > ex) scope
+```javascript
 var codeTrue = 'global';
 function example() {
   var codeTrue = 'local';
@@ -19,7 +18,6 @@ function example() {
 }
 example();       // codeTrue를 바꿔본다.
 alert(codeTrue); // 여전히 'global'
-
 ```
 
 
