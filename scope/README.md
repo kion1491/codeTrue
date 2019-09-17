@@ -13,7 +13,7 @@ function example() {
   var codeTrue = 'local';
   codeTrue = 'change';
 }
-example(); // codeTrue를 바꿔본다.
+example();       // codeTrue를 바꿔본다.
 alert(codeTrue); // 여전히 'global'
 
 ```
