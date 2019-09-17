@@ -8,13 +8,13 @@
 
 ```javascript
 
-var x = 'global';
-function ex() {
-  var x = 'local';
-  x = 'change';
+var codeTrue = 'global';
+function example() {
+  var codeTrue = 'local';
+  codeTrue = 'change';
 }
-ex(); // x를 바꿔본다.
-alert(x); // 여전히 'global'
+example(); // codeTrue를 바꿔본다.
+alert(codeTrue); // 여전히 'global'
 
 ```
 
