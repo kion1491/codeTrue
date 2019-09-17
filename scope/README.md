@@ -27,11 +27,14 @@ var x = 'local'은 example함수 안에서만 그 데이터를 사용할 수 있
 
 ```javascript
 var x = 'global';
-function ex() {
+function example() {
   x = 'change';
 }
 ex();
 alert(x); // 'change'
 ```
+아까와는 달리 example함수안에서 var선언을 하지 않았으며, x = 'change'를 넣으면 전역변수가 변경이 됩니다.  
+이는  ***자바스크립트는 변수의 범위를 호출한 함수의 지역 스코프부터 전역 변수들이 있는 전역 스코프까지 점차 넓혀가며 찾기 때문입니다.***
+
 
 ### 렉시컬 스코핑(lexical scoping)
