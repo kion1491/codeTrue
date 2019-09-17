@@ -2,5 +2,5 @@
 
 
 
-![Alt Text](./001.png)
+![Alt Text](./001.png){: width="200"} 
 
