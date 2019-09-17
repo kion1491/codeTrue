@@ -31,8 +31,8 @@
 
 1. [자바스크립트 개발 환경과 실행](/js_setup/README.md)
 1. [브라우저 동작 원리](/js_browser/README.md)
-1. [함수스코프](/scope/README.md)
-1. [실행컨텍스트](/example_code/README.md)
+1. [함수스코프](/js_scope/README.md)
+1. [실행컨텍스트](/js_context/README.md)
 1. [DOM API (Web API) and Concept]
 1. [ECMAScript2015(ES6)]
 
