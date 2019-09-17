@@ -9,21 +9,29 @@ window 객체에 변수를 생성하는것을 말합니다.
 
 * **지역변수**는 함수 안에 들어있는 변수를 의미합니다.
 
-> ex) scope
 ```javascript
-var codeTrue = 'global';
+var x = 'global';
 function example() {
-  var codeTrue = 'local';
-  codeTrue = 'change';
+  var x = 'local';
+  x = 'change';
 }
-example();       // codeTrue를 바꿔본다.
-alert(codeTrue); // 여전히 'global'
+example(); // x 바꿔본다.
+alert(x);  // 여전히 'global'
 ```
 
-
-
-
-
 ### 스코프 체인(scope chain)
+
+위의 코드에서 지역변수는 함수 스코프 때문에 전역변수에 영향을 줄수가 없습니다.
+var x = 'local'은 example함수 안에서만 그 데이터를 사용할 수 있습니다.
+바로 아래 x = 'change'도 함수안의 지역변수 x 를 바꾸게 됩니다.
+
+```javascript
+var x = 'global';
+function ex() {
+  x = 'change';
+}
+ex();
+alert(x); // 'change'
+```
 
 ### 렉시컬 스코핑(lexical scoping)
