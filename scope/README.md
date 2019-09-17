@@ -4,8 +4,7 @@
 
 ### 전역 변수(Global variable)와 지역 변수(Local variable)
 
-* **전역변수**란 자바스크립트에서 제일 바깥 범위(함수 안에 포함되지 않은)에 변수를 만드는 것을 말하며,   
-window 객체에 변수를 생성하는것을 말합니다.
+* **전역변수**란 자바스크립트에서 제일 바깥 범위(함수 안에 포함되지 않은)에 변수를 만드는 것을 말하며, window 객체에 변수를 생성하는것을 말합니다.
 
 * **지역변수**는 함수 안에 들어있는 변수를 의미합니다.
 
@@ -62,5 +61,7 @@ alert(x); // 'change'
 
 ### 참조
 
-- [스코프(scope)](https://poiemaweb.com/js-scope)
-- [함수의 범위(scope)](https://www.zerocho.com/category/Javascript/post/5740531574288ebc5f2ba97e)
+- [스코프 (scope)](https://poiemaweb.com/js-scope)
+- [함수의 범위 (scope)](https://www.zerocho.com/category/Javascript/post/5740531574288ebc5f2ba97e)
+- [[번역] 자바스크립트 스코프와 클로저](https://medium.com/@khwsc1/%EB%B2%88%EC%97%AD-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8A%A4%EC%BD%94%ED%94%84%EC%99%80-%ED%81%B4%EB%A1%9C%EC%A0%80-javascript-scope-and-closures-8d402c976d19)
+
