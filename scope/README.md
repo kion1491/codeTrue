@@ -42,4 +42,5 @@ alert(x); // 'change'
 ### 스코프 체인(scope chain)
 
 
+
 ### 렉시컬 스코핑(lexical scoping)
