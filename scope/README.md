@@ -1,6 +1,5 @@
-## 함수 스코프(scope)
+## 스코프(scope)
 
-* 함수 스코프는 범위라는 뜻입니다.
 
 ### 전역 변수(Global variable)와 지역 변수(Local variable)
 
@@ -9,7 +8,9 @@
 * **지역변수**는 함수 안에 들어있는 변수를 의미합니다.
 
 
-### 스코프 (scope)
+### 스코프(scope)
+
+* 함수 스코프는 범위라는 뜻입니다.
 
 1. 전역 스코프(Global Scope)
    - 변수가 함수 바깥이나 중괄호 ({}) 바깥에 선언되었다면, 전역 스코프에 정의된다고 합니다.  
@@ -51,9 +52,31 @@ alert(x); // 'change'
 * 만약 스코프가 없다면 같은 식별자끼리 충돌을 일으키므로 프로그램 전체에서 하나밖에 사용할 수가 없게됩니다.  
 * 보다 정확한 원리는 [실행컨텍스트](/example_code/README.md)에서 배울 수 있습니다.
 
+
 ### 스코프 체인(scope chain)
 
+* 전역변수와 지역변수의 관계에서 스코프 체인(scope chain)이란 개념이 나옵니다.  
+* 내부 함수에서는 외부 함수의 변수에 접근 가능하지만 외부 함수에서는 내부 함수의 변수에 접근할 수 없습니다.
 
+
+```javascript
+var name = 'zero';
+function outer() {
+  console.log('외부', name);
+  function inner() {
+    var enemy = 'nero';
+    console.log('내부', name);
+  }
+  inner();
+}
+outer();
+console.log(enemy); // undefined
+```
+
+* inner 함수는 name 변수를 찾기 위해 먼저 자기 자신의 스코프에서 찾고, 없으면 한 단계 올라가 outer 스코프에서 찾고, 
+  없으면 다시 올라가 결국 전역 스코프에서 찾습니다.   
+* 만약 전역 스코프에도 없다면 변수를 찾지 못하였다는 에러가 발생합니다.  
+* 이렇게 꼬리를 물고 계속 범위를 넓히면서 찾는 관계를 스코프 체인이라고 부릅니다.
 
 ### 렉시컬 스코핑(lexical scoping)
 
