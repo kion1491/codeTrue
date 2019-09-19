@@ -43,9 +43,9 @@ ECMAScript 스펙에 따르면 실행 컨텍스트를 실행 가능한 코드를
 * 실행 컨텍스트는 실행 가능한 코드를 형상화하고 구분하는 추상적인 개념이지만 물리적으로는 객체의 형태를 가지며 아래의 3가지 프로퍼티를 소유한다.  
 
 1. Variable Object (VO / 변수객체)
-  * 변수
-  * 매개변수(parameter)와 인수 정보(arguments)
-  * 함수 선언(함수 표현식은 제외)  
+   * 변수
+   * 매개변수(parameter)와 인수 정보(arguments)
+   * 함수 선언(함수 표현식은 제외)  
   
 1. Scope Chain (SC)  
 1. this value
