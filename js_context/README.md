@@ -46,15 +46,17 @@ ECMAScript 스펙에 따르면 실행 컨텍스트를 실행 가능한 코드를
    * 변수
    * 매개변수(parameter)와 인수 정보(arguments)
    * 함수 선언(함수 표현식은 제외)  
+
+
+   * 전역 컨텍스트의 경우  
+      - 전역 객체는 전역에 선언된 전역 변수와 전역 함수를 프로퍼티로 소유한다.  
+     
+   * 함수 컨텍스트의 경우  
+      - Variable Object는 Activation Object(AO / 활성 객체)를 가리키며 매개변수와 인수들의 정보를 배열의 형태로 담고 있는 객체인 arguments object가 추가된다.
   
 1. Scope Chain (SC)  
 1. this value
 
-  * 전역 컨텍스트의 경우  
-     - 전역 객체는 전역에 선언된 전역 변수와 전역 함수를 프로퍼티로 소유한다.  
-     
-  * 함수 컨텍스트의 경우  
-     - Variable Object는 Activation Object(AO / 활성 객체)를 가리키며 매개변수와 인수들의 정보를 배열의 형태로 담고 있는 객체인 arguments object가 추가된다.
 
 ### 참조
 
