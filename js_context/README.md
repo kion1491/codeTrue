@@ -27,7 +27,7 @@ ECMAScript 스펙에 따르면 실행 컨텍스트를 실행 가능한 코드를
 
 ### 컨텍스트와 함수 실행 순서
 
-<img src="./ec_1.png">
+<img src="./ec_1.png" width="80%">
 
 1. 먼저 전역 컨텍스트 하나 생성 후, 함수 호출 시마다 컨텍스트가 생깁니다.
 1. 컨텍스트 생성 시 컨텍스트 안에 변수객체(arguments, variable), scope chain, this가 생성됩니다.
