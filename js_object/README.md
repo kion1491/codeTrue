@@ -42,7 +42,7 @@
 
 
 
-### 참조
+### Reference
 
 - [Window 객체 - Window | MDN](https://developer.mozilla.org/ko/docs/Web/API/Window)
 - [표준 내장 객체 - JavaScript | MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects)
