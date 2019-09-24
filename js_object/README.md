@@ -13,16 +13,16 @@
 * **전역 객체(Global Object)**
   전역 객체는 모든 객체의 유일한 최상위 객체를 의미하며 일반적으로 Browser-side에서는 window, Server-side(Node.js)에서는 global 객체를 의미한다.
   
-  <p align="center"><img src="./win.gif" width="80%"><p>
+  <p align="center"><img src="./win.gif" width="80%"></p>
 
 * **BOM (Browser Object Model)** : 브라우저 객체 모델 (Browser Object Model)은 웹 브라우저와 관련된 객체의 집합을 나타낸다.  
 
-  <img src="./bom.png" width="40%">
+  <p align="center"><img src="./bom.png" width="40%"></p>
 
 
 * **DOM (Document Object Model)** : 문서 객체 모델은 현재 웹페이지의 모델을 생성한다.  
 
-  <img src="./dom.png" width="40%">
+  <p align="center"><img src="./dom.png" width="40%"></p>
 
 
 
