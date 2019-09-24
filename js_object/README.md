@@ -41,6 +41,8 @@
 
 ### 참조
 
+- [Window 객체 - Window | MDN](https://developer.mozilla.org/ko/docs/Web/API/Window)
+- [표준 내장 객체 - JavaScript | MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects)
 - [Window 객체와 BOM](https://www.zerocho.com/category/Javascript/post/573b321aa54b5e8427432946)
 - [빌트인 객체](https://poiemaweb.com/js-built-in-object)
 
