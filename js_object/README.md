@@ -27,7 +27,7 @@
 
 
 
-### 내장 객체(Native object)
+### 내장 객체(Native objects)
 * 네이티브 객체(Native objects or Built-in objects or Global Objects)는 ECMAScript 명세에 정의된 객체를 말하며 애플리케이션 전역의 공통 기능을 제공한다.  
 * 네이티브 객체는 애플리케이션의 환경과 관계없이 언제나 사용할 수 있다.
 
