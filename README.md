@@ -3,7 +3,7 @@
 > CodeTrue에서는 웹 프론트엔드 기술에 대하여 다루고 있습니다.
 
 ### Markdown
---
+---
 
 * [마크다운 작성법](http://ccl.cckorea.org/syntax/)
 * [깃허브 마크다운 도움말](https://guides.github.com/features/mastering-markdown/)
