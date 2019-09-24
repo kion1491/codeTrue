@@ -22,7 +22,7 @@
 *  Node.js는 클라이언트 사이드 Web API는 지원하지 않고 ECMAScript와 Node.js 고유의 API를 지원합니다.  
 
 
-### 참조
+### Reference
 
 - [자바스크립트 개발 환경과 실행 방법](https://poiemaweb.com/js-hello-world)
 
