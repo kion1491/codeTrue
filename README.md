@@ -4,13 +4,13 @@
 
 ### Markdown
 
-1. [마크다운 작성법](http://ccl.cckorea.org/syntax/)
-1. [깃허브 마크다운 도움말](https://guides.github.com/features/mastering-markdown/)
+* [마크다운 작성법](http://ccl.cckorea.org/syntax/)
+* [깃허브 마크다운 도움말](https://guides.github.com/features/mastering-markdown/)
 
 
 ### Front-end-developer Road-map 
 
-1. [프론트엔드 로드맵](https://github.com/devJang/developer-roadmap)
+* [프론트엔드 로드맵](https://github.com/devJang/developer-roadmap)
 
 
 ### Javascript
