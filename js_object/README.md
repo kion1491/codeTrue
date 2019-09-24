@@ -16,12 +16,12 @@
 
 * **BOM (Browser Object Model)** : 브라우저 객체 모델 (Browser Object Model)은 웹 브라우저와 관련된 객체의 집합을 나타낸다.  
 
-<img src="./bom.png" width="60%">
+<img src="./bom.png" width="40%">
 
 
 * **DOM (Document Object Model)** : 문서 객체 모델은 현재 웹페이지의 모델을 생성한다.  
 
-<img src="./dom.png" width="80%">
+<img src="./dom.png" width="40%">
 
 
 
