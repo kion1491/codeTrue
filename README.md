@@ -31,9 +31,9 @@
 
 1. [브라우저 동작 원리](/js_browser/README.md)
 1. [자바스크립트 개발환경](/js_setup/README.md)
-1. [Web API & DOM API](/js_api/README.md)
 1. [함수스코프](/js_scope/README.md)
 1. [실행컨텍스트](/js_context/README.md)
+1. [객체(Object)](/js_object/README.md)
 
 
 ### Framewrok
