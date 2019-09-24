@@ -104,7 +104,7 @@ bar(); // ?
 
 
 
-### 참조
+### Reference
 
 - [스코프 (scope)](https://poiemaweb.com/js-scope)
 - [함수의 범위 (scope)](https://www.zerocho.com/category/Javascript/post/5740531574288ebc5f2ba97e)
