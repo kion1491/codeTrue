@@ -47,4 +47,4 @@
 - [빌트인 객체](https://poiemaweb.com/js-built-in-object)
 
 
- **[⬆  Back to Top](#자바스크립트 객체의 분류)**
+ **[⬆  Back to Top](#자바스크립트-객체의-분류)**
