@@ -1,16 +1,15 @@
-## 스코프(scope)
+# 스코프(scope)
 
+* 함수 스코프는 범위라는 뜻입니다.
 
-### 전역 변수(Global variable)와 지역 변수(Local variable)
+## 전역 변수(Global variable)와 지역 변수(Local variable)
 
 * **전역변수**란 자바스크립트에서 제일 바깥 범위(함수 안에 포함되지 않은)에 변수를 만드는 것을 말하며, window 객체에 변수를 생성하는것을 말합니다.
 
 * **지역변수**는 함수 안에 들어있는 변수를 의미합니다.
 
 
-### 스코프(scope)
-
-* 함수 스코프는 범위라는 뜻입니다.
+## 스코프(scope)
 
 1. 전역 스코프(Global Scope)
    - 변수가 함수 바깥이나 중괄호 ({}) 바깥에 선언되었다면, 전역 스코프에 정의된다고 합니다.  
@@ -79,7 +78,7 @@ console.log(enemy); // undefined
 * 이렇게 꼬리를 물고 계속 범위를 넓히면서 찾는 관계를 스코프 체인(scope chain)이라고 부릅니다.
 
 
-### 렉시컬 스코핑(lexical scoping)
+## 렉시컬 스코핑(lexical scoping)
 
 * 렉시컬 스코프는 함수를 어디서 호출하는지가 아니라 어디에 선언하였는지에 따라 결정됩니다.  
 
@@ -104,7 +103,7 @@ bar(); // ?
 
 
 
-### Reference
+## Reference
 
 - [스코프 (scope)](https://poiemaweb.com/js-scope)
 - [함수의 범위 (scope)](https://www.zerocho.com/category/Javascript/post/5740531574288ebc5f2ba97e)
@@ -112,4 +111,5 @@ bar(); // ?
 
 
  **[⬆  Back to Top](#스코프scope)**
+   ---
 
