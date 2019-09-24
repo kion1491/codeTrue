@@ -26,7 +26,7 @@
     * HTML 요소들이 스크립트 로딩 지연으로 인해 렌더링에 지장 받는 일이 발생하지 않아 페이지 로딩 시간이 단축된다.
     * DOM이 완성되지 않은 상태에서 자바스크립트가 DOM을 조작한다면 에러가 발생한다.
 
-### 참조
+### Reference
 
 - [브라우저 동작 원리](https://poiemaweb.com/js-browser)
 - [브라우저는 어떻게 동작하는가?](https://d2.naver.com/helloworld/59361)
