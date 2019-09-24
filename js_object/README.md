@@ -4,7 +4,7 @@
 
 1. [호스트 객체](#호스트-객체host-object)
 1. [내장 객체](#내장-객체Native-object)
-1. [사용자 정의 객체](#사용자-정의-User-defined-object)
+1. [사용자 정의 객체](#사용자-정의-객체user-defined-object)
 
 
 ### 호스트 객체(Host object)
