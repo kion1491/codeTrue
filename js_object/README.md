@@ -1,4 +1,4 @@
-## 자바스크립트 객체의 분류
+# 자바스크립트 객체의 분류
 
 자바스크립트의 객체는 크게 3개의 객체로 분류할 수 있습니다.
 
@@ -7,7 +7,7 @@
 1. [사용자 정의 객체](#사용자-정의-객체user-defined-object)
 
 
-### 호스트 객체(Host object)
+## 호스트 객체(Host object)
 > 브라우저에서 동작하는 환경의 호스트 객체는 전역 객체인 window, BOM(Browser Object Model)과 DOM(Document Object Model) 및 XMLHttpRequest 객체 등을 제공한다.  
 
 * **전역 객체(Global Object)**
@@ -27,7 +27,7 @@
 
 
 
-### 내장 객체(Native objects)
+## 내장 객체(Native objects)
 * 네이티브 객체(Native objects or Built-in objects or Global Objects)는 ECMAScript 명세에 정의된 객체를 말하며 애플리케이션 전역의 공통 기능을 제공한다.  
 * 네이티브 객체는 애플리케이션의 환경과 관계없이 언제나 사용할 수 있다.
 
@@ -35,14 +35,14 @@
 
 
 
-### 사용자 정의 객체(User-defined object)
+## 사용자 정의 객체(User-defined object)
 
 * 자바스크립트에는 많은 객체들이 내장되어 있지만 보다 효율적인 작업을 위해 객체를 직접 정의해서 사용하기도 한다.  
 * 사용자 정의객체는 생성자 함수(Constructor)와 new keyword를 이용하여 만든다.
 
 
 
-### Reference
+## Reference
 
 - [Window 객체 - Window | MDN](https://developer.mozilla.org/ko/docs/Web/API/Window)
 - [표준 내장 객체 - JavaScript | MDN](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects)
@@ -51,3 +51,4 @@
 
 
  **[⬆  Back to Top](#자바스크립트-객체의-분류)**
+---
