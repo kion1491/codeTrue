@@ -10,6 +10,7 @@
 * HTML, CSS 파일은 렌더링 엔진의 HTML 파서와 CSS 파서에 의해 파싱(Parsing)되어 DOM, CSSOM 트리로 변환되고 렌더 트리로 결합됩니다.  
 * 이렇게 생성된 렌더 트리를 기반으로 브라우저는 웹페이지를 표시한다.  
 
+<sub>아래 그림은 웹킷 동작 과정입니다.</sub>
 
 <p align="center"><img src="./001.png" width="80%"></p>
 
