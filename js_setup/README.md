@@ -22,6 +22,7 @@
 ## Reference
 
 - [자바스크립트 개발 환경과 실행 방법](https://poiemaweb.com/js-hello-world)
+- [script의 async와 defer 속성](https://blog.asamaru.net/2017/05/04/script-async-defer/)
 
 
 
