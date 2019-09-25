@@ -16,11 +16,11 @@
 
 ## Javascript
 
-1. [브라우저 동작 원리](/js/js_browser/README.md)
-1. [자바스크립트 동작 원리](/js/js_setup/README.md)
-1. [자바스크립트 객체의 분류](/js/js_object/README.md)
-1. [스코프](/js/js_scope/README.md)
-1. [실행컨텍스트](/js/js_context/README.md)
+1. [브라우저 동작 원리](/js_browser/README.md)
+1. [자바스크립트 동작 원리](/js_setup/README.md)
+1. [자바스크립트 객체의 분류](/js_object/README.md)
+1. [스코프](/js_scope/README.md)
+1. [실행컨텍스트](/js_context/README.md)
 
 
 
