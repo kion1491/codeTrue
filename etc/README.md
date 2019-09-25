@@ -1,42 +1,39 @@
-## Intro
+# 용어사전
 
-> CodeTrue에서는 웹 프론트엔드 기술에 대하여 다루고 있습니다.
+> 용어에 대해 알아봅시다.
 
-## Markdown
+## 플러그인 (Plug-in)
 
-
-* [마크다운 작성법](http://ccl.cckorea.org/syntax/)
-* [깃허브 마크다운 도움말](https://guides.github.com/features/mastering-markdown/)
-
-
-## Front-end-developer Road-map 
-
-* [프론트엔드 로드맵](https://github.com/devJang/developer-roadmap)
+* 포토샵을 예로 들면 피 흘리는 효과, 불탄 것 같은 느낌들을 연출하고 싶을 때 사용자는 이런 효과가 가능한 플러그인을 찾아서 설치를 하면 됩니다.  
+* 이 때문에 플러그인은 다른 프로그램에 설치할 수 없습니다. 다시 말해서 포토샵 플러그인은 포토샵에서만 사용가능합니다.  
+* 플러그인은 본 프로그램에 종속되어있습니다. 하지만 자신의 기능이 포함된 원래 실행파일이나 소스를 가지고 있습니다.
 
 
-## Javascript
+## 모듈 (Module)
 
-1. [브라우저 동작 원리](/javascript/js_browser/README.md)
-1. [자바스크립트 동작 원리](/javascript/js_setup/README.md)
-1. [자바스크립트 객체의 분류](/javascript/js_object/README.md)
-1. [스코프](/javascript/js_scope/README.md)
-1. [실행컨텍스트](/javascript/js_context/README.md)
+* 윈도우의 메모장 프로그램을 예를 들어 파일을 읽는 부분, 글자를 쓰거나 고치는 에디터 부분, 파일로 저장하는 부분 등으로 나누어 집니다.  
+* 이처럼 기능별로 작게 나누어진 프로그램 단위를 모듈이라고 하며 개별 프로그램의 작은 단위를 말합니다.
 
 
+## 위젯 (Widget)
 
-## Reference
-
-- [모든 자바스크립트 개발자가 알아야 하는 33가지 개념](https://github.com/yjs03057/33-js-concepts)
-- [웹 프론트엔드 개발자, 어떻게 준비해야 할까?](https://medium.com/@codesquad_yoda/%EC%9B%B9-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EA%B0%9C%EB%B0%9C%EC%9E%90-%EC%96%B4%EB%96%BB%EA%B2%8C-%EC%A4%80%EB%B9%84%ED%95%B4%EC%95%BC-%ED%95%A0%EA%B9%8C-5ac7bb6ff2a9)
-- [탁월한 프론트엔드 엔지니어가 되는 법](https://hyunseob.github.io/2016/02/21/how-to-become-a-great-frontend-engineer/)
-- [프론트엔드 개발자는 왜 구하기 어렵나요?](https://taegon.kim/archives/4810)
+* 대표적으로 블로그에 붙이는 달력과 날씨, 그리고 소셜 댓글 위젯을 들 수 있으며, 플러그인처럼 설치를 하거나 대여섯줄 분량의 소스를 원하는 자리에 붙이면 바로 실행이 됩니다. 
+* 플러그인이 자체적으로 완벽한 하나의 프로그램인 것에 비하면, 위젯은 프로그램을 호출하여 보여주는 식입니다.
+* 여러 플랫폼에 장착이 가능하여 본프로그램에서 독립적이지만 온라인으로 자신의 프로그램을 불러와야하는 프로그램입니다.
 
 
-## Etc. 
+## API(Application Programming Interface)
 
-* [용어사전](/etc/README.md)
+* API는 용어 자체가 포괄적으로 사용되며, 어플리케이션을 만들기 위한 하위 함수, 프로토콜, 도구들의 집합을 말합니다. 
+* 운영체제와 응용프로그램 사이의 통신에 사용되는 언어나 메시지 형식을 말합니다.
+* GUI 가 일반인들이 프로그램을 사용하기 쉽게 만들어 준다면, API 는 프로그래머가 특정 기술을 사용하기 쉽게 만들어줍니다.
 
 
- **[⬆  Back to Top](#Intro)**
+
+
+
+
+
+ **[⬆  Back to Top](#용어사전)**
 ---
 
