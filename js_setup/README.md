@@ -30,12 +30,51 @@
   - 함수를 실행하면 해당 함수의 기록을 스택 맨 위에 추가(Push) 합니다.
   - 우리가 함수를 결과 값을 반환하면 스택에 쌓여있던 함수는 제거(Pop) 됩니다.
 
+## 스택 오버플로우(Stack overflow)
+
+* 이름 그대로 스택의 사이즈를 초과 했을 때 발생하는 오류입니다.
+
+```javascript
+function foo() {
+    foo();
+}
+foo();
+```
+
+<p align="center"><img src="./stackoverflow.png" width="80%"></p>
+
+<p align="center"><img src="./maxomum.png" width="80%"></p>
+
+* foo() 함수의 내부를 살펴보면 종료 조건 없이 자신을 계속해서 호출하게 됩니다.  
+* 따라서 함수의 스택 프레임이 계속해서 호출 스택에 쌓이게 됩니다.
+* 그러다가 어떠한 시점에서 호출 스택의 함수 호출 수가 호출 스택의 실제 크기를 초과하게 되고, 브라우저는 다음과 같은 오류를 발생시키는 것으로 함수를 종료 시킵니다.
+
+
+## 단일 호출 스택의 문제점
+
+* 단일 스레드를 사용하는 자바스크립트에서는 하나의 호출 스택만 있기 때문에, 브라우저가 호출 스택에서 많은 작업을 처리하기 시작하면 꽤 오랜 시간 동안 응답을 멈출 수 있습니다. 
+
+<p align="center"><img src="./killpage.png" width="80%"></p>
+
+* 가장 쉬운 해결책은 비동기 콜백(Asynchronous callbacks)을 사용하는 것입니다.
+* 즉, 우리의 코드 일부를 실행하고 나중에 실행될 콜백(함수)를 제공합니다. 
+
+
+## 이벤트 큐(Event Queue)와 비동기 콜백의 처리 과정
+
+<p align="center"><img src="./event-loop.png" width="80%"></p>
+
+* 동작 방식  
+  1. 우선 클릭과 같은 이벤트가 발생하면 DOM 이벤트, http 요청, setTimeout 등과 같은 비동기 함수는 C++로 구현된 web API를 호출하며, web API는 콜백 함수를 이벤트 큐(콜백 큐)에 밀어 넣습니다.  
+  1. 이벤트 큐는 대기하다가 스택이 텅 비는 시점에 이벤트 루프를 돌리게 됩니다(스택에 넣음)  
+  1. 이벤트 루프의 기본 역할은 큐와 스택, 두 부분을 지켜보다가 스택이 비는 시점에 콜백을 실행시켜 주며, 각 메시지와 콜백은 다른 메시지가 처리되기 전에 완전히 처리됩니다.
+
 
 
 ## Reference
 
-- [자바스크립트 개발 환경과 실행 방법](https://poiemaweb.com/js-hello-world)
-- [script의 async와 defer 속성](https://blog.asamaru.net/2017/05/04/script-async-defer/)
+- [자바스크립트 호출 스택(Call Stack) 이해하기](https://new93helloworld.tistory.com/358)
+- [자바스크립트 호출 스택(Call Stack) 동작 예제](https://new93helloworld.tistory.com/361)
 
 
 
