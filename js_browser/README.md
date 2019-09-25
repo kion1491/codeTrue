@@ -13,7 +13,7 @@
 
 <p align="center"><img src="./001.png" width="80%"></p>
 
-<p align="center" color="#d0d0d0"><sub>위 그림은 웹킷 동작 과정입니다.</sub></p>
+<p align="center" font-color="#d0d0d0"><sub>위 그림은 웹킷 동작 과정입니다.</sub></p>
 
 * HTML 파서는 script 태그를 만나면 자바스크립트 코드를 실행하기 위해 DOM 생성 프로세스를 중지하고 자바스크립트 엔진으로 제어 권한을 넘깁니다.  
 * 제어 권한을 넘겨 받은 자바스크립트 엔진은 script 태그 내의 자바스크립트 코드 또는 script 태그의 src 어트리뷰트에 정의된 자바스크립트 파일을 로드하고 파싱하여 실행합니다.  
