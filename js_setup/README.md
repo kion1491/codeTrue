@@ -54,7 +54,7 @@ foo();
 
 * 단일 스레드를 사용하는 자바스크립트에서는 하나의 호출 스택만 있기 때문에, 브라우저가 호출 스택에서 많은 작업을 처리하기 시작하면 꽤 오랜 시간 동안 응답을 멈출 수 있습니다. 
 
-<p align="center"><img src="./killpage.png" width="80%"></p>
+<p align="center"><img src="./killpage.png"></p>
 
 * 가장 쉬운 해결책은 비동기 콜백(Asynchronous callbacks)을 사용하는 것입니다.
 * 즉, 우리의 코드 일부를 실행하고 나중에 실행될 콜백(함수)를 제공합니다. 
