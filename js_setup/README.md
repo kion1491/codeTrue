@@ -43,7 +43,7 @@ foo();
 
 <p align="center"><img src="./stackoverflow.png" width="80%"></p>
 
-<p align="center"><img src="./maximum.png" width="80%"></p>
+<p align="center"><img src="./maximum.png"></p>
 
 * foo() 함수의 내부를 살펴보면 종료 조건 없이 자신을 계속해서 호출하게 됩니다.  
 * 따라서 함수의 스택 프레임이 계속해서 호출 스택에 쌓이게 됩니다.
