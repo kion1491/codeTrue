@@ -75,7 +75,7 @@ foo();
 
 - [자바스크립트 호출 스택(Call Stack) 이해하기](https://new93helloworld.tistory.com/358)
 - [자바스크립트 호출 스택(Call Stack) 동작 예제](https://new93helloworld.tistory.com/361)
-- [영상자료 - What the heck is the event loop anyway? | Philip Roberts | JSConf EU](https://youtu.be/8aGhZQkoFbQ)
+- [이벤트루프 영상자료 - What the heck is the event loop anyway? | Philip Roberts | JSConf EU](https://youtu.be/8aGhZQkoFbQ)
 
 
 
