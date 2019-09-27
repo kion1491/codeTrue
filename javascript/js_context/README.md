@@ -39,22 +39,22 @@ ECMAScript 스펙에 따르면 실행 컨텍스트를 실행 가능한 코드를
 #### [Example Code]
 
 ```javascript
-
-var name = 'jedi';  
-function wow(word) {
-  console.log(word + ' ' + name);
-}
-function say () {
-  var name = 'nero';
-  console.log(name);
-  wow('hello');
+// Example Code                               // 객체형식 
+var name = 'jedi';                            '전역 컨텍스트': {
+function wow(word) {                            변수객체: {
+  console.log(word + ' ' + name);                 arguments: null,
+}                                                 variable: ['name', 'wow', 'say'],
+function say () {                               },
+  var name = 'nero';                            scopeChain: ['전역 변수객체'],
+  console.log(name);                            this: window,
+  wow('hello');                               }
 }
 say();
 
 ```
   * 작동순서  
-    01.ㅁㅇㄻㅇㄴㄹ 
-    02.  
+    01.전역 컨텍스트가 생성되고 변수객체, scope chain, this가 들어옵니다. 
+    02.variable은 해당 스코프의 변수들 --> name , wow , say
 
 
 
