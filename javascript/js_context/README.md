@@ -40,16 +40,16 @@ ECMAScript 스펙에 따르면 실행 컨텍스트를 실행 가능한 코드를
 
 ```javascript
 
-var name = 'zero'; // (1)변수 선언 (6)변수 대입
-function wow(word) { // (2)변수 선언 (3)변수 대입
-  console.log(word + ' ' + name); // (11)
+var name = 'jedi'; 
+function wow(word) {
+  console.log(word + ' ' + name);
 }
-function say () { // (4)변수 선언 (5)변수 대입
-  var name = 'nero'; // (8)
-  console.log(name); // (9)
-  wow('hello'); // (10)
+function say () {
+  var name = 'nero';
+  console.log(name);
+  wow('hello');
 }
-say(); // (7)
+say();
 
 ```
 
