@@ -36,10 +36,9 @@ ECMAScript 스펙에 따르면 실행 컨텍스트를 실행 가능한 코드를
 > 스코프 체인은 식별자 중에서 객체(전역 객체 제외)의 프로퍼티가 아닌 식별자, 즉 변수를 검색하는 메커니즘이다.
 식별자 중에서 변수가 아닌 객체의 프로퍼티(물론 메소드도 포함된다)를 검색하는 메커니즘은 프로토타입 체인(Prototype Chain)이다.
 
-#### [Example Code]
-
 ```javascript
-// Example Code                               // 객체형식 
+// Example Code                               // 객체형식으로 표현 
+
 var name = 'jedi';                            '전역 컨텍스트': {
 function wow(word) {                            변수객체: {
   console.log(word + ' ' + name);                 arguments: null,
@@ -54,7 +53,9 @@ say();
 ```
   * 작동순서  
     01.전역 컨텍스트가 생성되고 변수객체, scope chain, this가 들어옵니다. 
-    02.variable은 해당 스코프의 변수들 --> name , wow , say
+    02.variable은 해당 스코프의 변수들 --> [name , wow , say]  (wow랑 say는 호이스팅 때문에 선언과 동시에 대입)
+       scope chain은 자기 자신인 전역 변수객체입니다.  
+       this는 따로 설정되어 있지 않아 현재는 window입니다.(생성자함수 new호출시 this를 바꿀수 있음.) 
 
 
 
