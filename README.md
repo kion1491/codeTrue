@@ -21,6 +21,8 @@
 1. [자바스크립트 객체의 분류](/javascript/js_object/README.md)
 1. [스코프](/javascript/js_scope/README.md)
 1. [실행컨텍스트](/javascript/js_context/README.md)
+1. [호이스팅]
+1. [클로저]
 
 
 
