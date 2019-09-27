@@ -37,18 +37,18 @@ ECMAScript 스펙에 따르면 실행 컨텍스트를 실행 가능한 코드를
 식별자 중에서 변수가 아닌 객체의 프로퍼티(물론 메소드도 포함된다)를 검색하는 메커니즘은 프로토타입 체인(Prototype Chain)이다.
 
 ```javascript
-// Example Code                               // 객체형식으로 표현 
+// Example Code                                           // 객체형식으로 표현 
 
-var name = 'jedi';                            '전역 컨텍스트': {
-function wow(word) {                            변수객체: {
-  console.log(word + ' ' + name);                 arguments: null,
-}                                                 variable: ['name', 'wow', 'say'],
-function say () {                               },
-  var name = 'nero';                            scopeChain: ['전역 변수객체'],
-  console.log(name);                            this: window,
-  wow('hello');                               }
-}
-say();
+(1),(6) |  var name = 'jedi';                            '전역 컨텍스트': {
+(1),(6) |  function wow(word) {                            변수객체: {
+(1),(6) |    console.log(word + ' ' + name);                 arguments: null,
+           }                                                 variable: ['name', 'wow', 'say'],
+(1),(6) |  function say () {                               },
+(1),(6) |    var name = 'nero';                            scopeChain: ['전역 변수객체'],
+(1),(6) |    console.log(name);                            this: window,
+(1),(6) |    wow('hello');                               }
+           }
+(1),(6) |  say();
 
 ```
   * 작동순서  
