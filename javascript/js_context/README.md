@@ -44,7 +44,7 @@ ECMAScript 스펙에 따르면 실행 컨텍스트를 실행 가능한 코드를
 (11)    |    console.log(word + ' ' + name);                 arguments: null,
            }                                                 variable: ['name', 'wow', 'say'],
 (4),(5) |  function say () {                               },
-(8)     |    var name = 'nero';                            scopeChain: ['전역 변수객체'],
+(8)     |    var name = 'yoon';                            scopeChain: ['전역 변수객체'],
 (8)     |    console.log(name);                            this: window,
 (10)    |    wow('hello');                               }
            }
