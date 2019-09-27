@@ -40,7 +40,7 @@ ECMAScript 스펙에 따르면 실행 컨텍스트를 실행 가능한 코드를
 
 ```javascript
 
-var name = 'jedi'; ㅁㄴㄴㅇ
+① var name = 'jedi';  
 function wow(word) {
   console.log(word + ' ' + name);
 }
