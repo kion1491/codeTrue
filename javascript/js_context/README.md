@@ -52,10 +52,10 @@ say();
 
 ```
   * 작동순서  
-    01.전역 컨텍스트가 생성되고 변수객체, scope chain, this가 들어옵니다.  
-    02.variable은 해당 스코프의 변수들 --> [name , wow , say]  (wow랑 say는 호이스팅 때문에 선언과 동시에 대입)  
-       scope chain은 자기 자신인 전역 변수객체입니다.    
-       this는 따로 설정되어 있지 않아 현재는 window입니다.(생성자함수 new호출시 this를 바꿀수 있음.) 
+    01. 전역 컨텍스트가 생성되고 변수객체, scope chain, this가 들어옵니다.  
+    02. variable은 해당 스코프의 변수들 --> [name , wow , say]  (wow랑 say는 호이스팅 때문에 선언과 동시에 대입)  
+        scope chain은 자기 자신인 전역 변수객체입니다.    
+        this는 따로 설정되어 있지 않아 현재는 window입니다.(생성자함수 new호출시 this를 바꿀수 있음.) 
 
 
 
