@@ -40,7 +40,7 @@ ECMAScript 스펙에 따르면 실행 컨텍스트를 실행 가능한 코드를
 
 ```javascript
 
-① var name = 'jedi';  
+var name = 'jedi';  
 function wow(word) {
   console.log(word + ' ' + name);
 }
@@ -52,7 +52,9 @@ function say () {
 say();
 
 ```
-
+  * 작동순서  
+    01. ㅁㅇㄻㅇㄴㄹ 
+    02. 
 
 
 
