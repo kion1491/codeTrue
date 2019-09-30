@@ -10,3 +10,5 @@
 ## API 활용 경험
 * [카카오 맵 API 활용해보기](https://github.com/kion1491/FOSF_MAP)
 
+## 그밖의 API 발급 등 활용 예
+* [NAVER API 발급받기](https://visualize.tistory.com/61)
