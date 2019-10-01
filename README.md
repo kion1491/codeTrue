@@ -22,7 +22,7 @@
 1. [스코프](/javascript/js_scope/README.md)
 1. [실행컨텍스트](/javascript/js_context/README.md)
 1. [호이스팅](/javascript/js_hoisting/README.md)
-1. [클로저]
+1. [클로저](/javascript/js_closures/README.md)
 1. [객체]
 1. [함수]
 1. [콜백]
