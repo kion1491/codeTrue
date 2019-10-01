@@ -117,10 +117,31 @@ console.log(typeof myName);   // > "string"
 console.log(typeof yourName); // > "string"
 ```
 
+## 값이 할당되어 있지 않은 변수와 값이 할당되어 있는 변수에서의 호이스팅
+
+
+```javascript 
+var myName = "Heee";   // 값 할당 
+var yourName;          // 값 할당 X
+
+function myName() {   // 같은 이름의 함수 선언
+    console.log("myName Function");
+}
+function yourName() { // 같은 이름의 함수 선언
+    console.log("yourName Function");
+}
+
+console.log(typeof myName);   // > "string"
+console.log(typeof yourName); // > "function"
+```
+* 값이 할당되어 있지 않은 변수의 경우, 함수선언문이 변수를 덮어버립니다.
+* 값이 할당되어 있는 변수의 경우, 변수가 함수선언문을 덮어버립니다.
+
+
 ## Reference
 
 - [실행 컨텍스트와 자바스크립트의 동작 원리](https://poiemaweb.com/js-execution-context)
-
+- [[JavaScript] 호이스팅(Hoisting)이란](https://gmlwjd9405.github.io/2019/04/22/javascript-hoisting.html)
 
 
  **[⬆  Back to Top](#호이스팅Hoisting)**
