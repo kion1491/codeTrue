@@ -78,7 +78,7 @@ function sayWow() {         // (2) 선언과 동시에 초기화(호이스팅)
 
 
 ```javascript 
-// 호이스팅 이전
+/** --- 호이스팅 이전 --- */
 
 var myName = "hi";
 
@@ -97,24 +97,24 @@ console.log(typeof yourName);
 
 ```javascript 
 /** --- JS Parser 내부의 호이스팅(Hoisting)의 결과 --- */
-  // 1. [Hoisting] 변수값 선언 
-  var myName; 
-  var yourName; 
 
-  // 2. [Hoisting] 함수선언문
-  function myName() {
-      console.log("yuddomack");
-  }
-  function yourName() {
-      console.log("everyone");
-  }
+// 1. [Hoisting] 변수값 선언 
+var myName; 
+var yourName; 
 
-  // 3. 변수값 할당
-  myName = "hi";
-  yourName = "bye";
+// 2. [Hoisting] 함수선언문
+function myName() {
+    console.log("yuddomack");
+}
+function yourName() {
+    console.log("everyone");
+}
+// 3. 변수값 할당
+myName = "hi";
+yourName = "bye";
 
-  console.log(typeof myName); // > "string"
-  console.log(typeof yourName); // > "string"
+console.log(typeof myName);   // > "string"
+console.log(typeof yourName); // > "string"
 ```
 
 ## Reference
