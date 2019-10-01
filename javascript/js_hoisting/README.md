@@ -56,6 +56,8 @@ function sayWow() {         // (2) 선언과 동시에 초기화(호이스팅)
 
 
 ```javascript 
+// 객체형식으로 표현
+
 '전역 컨텍스트': {
   변수객체: {
     arguments: null,
