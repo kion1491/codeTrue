@@ -18,6 +18,8 @@
 1. var 변수 선언과 함수선언문에서만 호이스팅이 일어난다.
 2. let/const 변수 선언과 함수표현식에서는 호이스팅이 발생하지 않는다.
 
+
+
 ## 함수선언문에서의 호이스팅  
 
 * 함수선언문은 코드를 구현한 위치와 관계없이 자바스크립트의 특징인 호이스팅에 따라 브라우저가 자바스크립트를 해석할 때 맨 위로 끌어 올려진다.
@@ -70,6 +72,50 @@ function sayWow() {         // (2) 선언과 동시에 초기화(호이스팅)
 * 컨텍스트 생성 및 코드가 순차적으로 실행되는데 sayYeah는 대입되기 전에 호출해서 에러가 발생합니다.
 
 
+## 같은 이름의 var 변수 선언과 함수 선언에서의 호이스팅
+
+* 변수 선언이 함수 선언보다 위로 끌어올려진다.
+
+
+```javascript 
+// 호이스팅 이전
+
+var myName = "hi";
+
+function myName() {
+    console.log("yuddomack");
+}
+function yourName() {
+    console.log("everyone");
+}
+var yourName = "bye";
+
+console.log(typeof myName);
+console.log(typeof yourName);
+```
+
+
+```javascript 
+/** --- JS Parser 내부의 호이스팅(Hoisting)의 결과 --- */
+  // 1. [Hoisting] 변수값 선언 
+  var myName; 
+  var yourName; 
+
+  // 2. [Hoisting] 함수선언문
+  function myName() {
+      console.log("yuddomack");
+  }
+  function yourName() {
+      console.log("everyone");
+  }
+
+  // 3. 변수값 할당
+  myName = "hi";
+  yourName = "bye";
+
+  console.log(typeof myName); // > "string"
+  console.log(typeof yourName); // > "string"
+```
 
 ## Reference
 
