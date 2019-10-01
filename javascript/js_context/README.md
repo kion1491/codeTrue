@@ -72,30 +72,30 @@ ECMAScript 스펙에 따르면 실행 컨텍스트를 실행 가능한 코드를
 ## 실행 컨텍스트의 생성과정  
 
 ```javascript
-// Example Code                                           // 객체형식으로 표현 
+// Example Code                                                  // 객체형식으로 표현 
 
-(1),(6) |  var name = 'jedi';                            '전역 컨텍스트': {
-(2),(3) |  function wow(word) {                            변수객체: {
-(11)    |    console.log(word + ' ' + name);                 arguments: null,
-           }                                                 variable: ['name', 'wow', 'say'],
-(4),(5) |  function say () {                               },
-(8)     |    var name = 'yoon';                            scopeChain: ['전역 변수객체'],
-(9)     |    console.log(name);                            this: window,
-(10)    |    wow('hello');                               }
+(1),(6) |  var name = 'jedi';                                   '전역 컨텍스트': {
+(2),(3) |  function wow(word) {                                   변수객체: {
+(11)    |    console.log(word + ' ' + name);                        arguments: null,
+           }                                                        variable: ['name', 'wow', 'say'],
+(4),(5) |  function say () {                                      },
+(8)     |    var name = 'yoon';                                   scopeChain: ['전역 변수객체'],
+(9)     |    console.log(name);                                   this: window,
+(10)    |    wow('hello');                                      }
            }
 (7)     |  say();
 
 
-// 객체형식으로 표현 
+// 객체형식으로 표현                                              // 객체형식으로 표현
 
-'say 컨텍스트': {
-  변수객체: {
-    arguments: null,
-    variable: ['name'], // 초기화 후 [{ name: 'yoon' }]가 됨
-  },
-  scopeChain: ['say 변수객체', '전역 변수객체'],
-  this: window,
-}
+'say 컨텍스트': {                                                'wow 컨텍스트': {     
+  변수객체: {                                                       변수객체: {
+    arguments: null,                                                  arguments: [{ word : 'hello' }],      
+    variable: ['name'], // 초기화 후 [{ name: 'yoon' }]가 됨           variable: null,                                          
+  },                                                               },
+  scopeChain: ['say 변수객체', '전역 변수객체'],                    scopeChain: ['wow 변수객체', '전역 변수객체'],
+  this: window,                                                   this: window,    
+}                                                               } 
 
 ```
 
@@ -115,15 +115,27 @@ ECMAScript 스펙에 따르면 실행 컨텍스트를 실행 가능한 코드를
 
 * 실행 작동순서  
 
-(1) variable은 해당 스코프의 변수선언 --> variable: ['name']  
-(2) variable은 해당 스코프의 변수선언 --> variable: [name , wow]  
-(3) wow는 호이스팅 때문에 선언과 동시에 대입  
-(4) variable은 해당 스코프의 변수선언 --> variable: [name , wow , say]  
-(5) say는 호이스팅 때문에 선언과 동시에 대입  
-(6) 
+  (1) variable은 해당 스코프의 변수선언 --> variable: ['name']  
+  (2) variable은 해당 스코프의 변수선언 --> variable: [name , wow]  
+  (3) wow는 호이스팅 때문에 선언과 동시에 대입  
+  (4) variable은 해당 스코프의 변수선언 --> variable: [name , wow , say]  
+  (5) say는 호이스팅 때문에 선언과 동시에 대입  
+  (6) variable의 name에 jedi가 대입됩니다.
+  (7) say 함수호출시 새로운 컨텍스트인 say 함수 컨텍스트가 생깁니다.   
+    객체형식으로 표현한 'say 컨텍스트'를 살펴보면 arguments는 없고, variable은 name이 있습니다.
+  (8) variable의 name에 yoon 을 대입해 줍니다.
+  (9) name 변수는 먼저 say 컨텍스트 안에서 찾게 됩니다. variable에 name이 yoon이라고 되어 있네요. name이 콘솔에 찍힙니다. 
+  (10) say 컨텍스트 안에서 wow 변수를 찾을 수 없습니다. 찾을 수 없다면 scope chain을 따라 올라가 상위 변수객체에서 찾습니다.  
+     전역 변수객체의 variable에 wow라는 함수가 있으므로 이것을 호출합니다.
+  (11) 위에서 wow 함수의 스코프 체인은 선언 시에 이미 정해져 있습니다. 따라서 say 스코프는 wow 컨텍스트의 scope chain이 아닙니다.  
+  (11-1) variable은 없고, this는 window입니다.  
+  (11-2) word는 arguments에서 찾을 수 있고, name은 wow 변수객체에는 값이 없으니, scope chain을 따라 전역 스코프에서 찾으시면 됩니다. 
+  (11-3) variable에 name이 jedi라고 되어 있네요. 그래서 hello jedi가 console에 찍힙니다.
+  (11-4) wow 컨텍스트에 따르면 wow 함수는 애초에 say 컨텍스트와 일절 관련이 없었다는것을 알수있습니다.
+  (12) wow 함수 종료 후 wow 컨텍스트가 사라지고, say 함수의 실행이 마무리됩니다. 
+  (13) say 컨텍스트도 사라지고, 마지막에 전역 컨텍스트도 사라집니다.
+  (14) 실행컨텍스트 종료
 
-     scope chain은 자기 자신인 전역 변수객체입니다.    
-     this는 따로 설정되어 있지 않아 현재는 window입니다.(생성자함수 new호출시 this를 바꿀수 있음.) 
 
 
 
