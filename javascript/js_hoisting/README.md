@@ -35,6 +35,25 @@ zero = 'zero';
 * 하지만 에러 없이 정상 작동합니다. 변수 선언과 함수 선언식이 최상단으로 끌어올려졌기 때문입니다.
 
 
+## 함수표현식에서의 호이스팅  
+
+* 함수표현식은 함수선언문과 달리 선언과 호출 순서에 따라서 정상적으로 함수가 실행되지 않을 수 있습니다.
+* 함수표현식의 선언이 호출보다 위에 있는 경우 - 정상 출력
+* 함수표현식의 선언이 호출보다 아래에 있는 경우 (var 변수에 할당) - TypeError
+
+```javascript 
+sayWow();                   // (3)
+sayYeah();                  // (5) 여기서 대입되기 전에 호출해서 에러
+var sayYeah = function() {  // (1) 선언 (6) 대입
+  console.log('yeah');
+}
+function sayWow() {         // (2) 선언과 동시에 초기화(호이스팅)
+  console.log('wow');       // (4)
+}
+```
+
+
+
 ## Reference
 
 - [실행 컨텍스트와 자바스크립트의 동작 원리](https://poiemaweb.com/js-execution-context)
