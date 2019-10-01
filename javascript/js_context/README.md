@@ -1,20 +1,20 @@
 
 # 실행 컨텍스트(Execution Context)
 
-#### 실행 컨텍스트(Execution Context)는 scope, hoisting, this, function, closure 등의 동작원리를 담고 있는 자바스크립트의 핵심원리이다.
+#### 실행 컨텍스트(Execution Context)는 scope, hoisting, this, function, closure 등의 동작원리를 담고 있는 자바스크립트의 핵심원리입니다.
 
-컨텍스트는 한국말로 번역하면 문맥이라는 뜻이며, 쉽게 코드의 실행 환경이라고 이해하시면 됩니다.   
+**컨텍스트**는 한국말로 번역하면 문맥이라는 뜻이며, 쉽게 코드의 실행 환경이라고 이해하시면 됩니다.   
 ECMAScript 스펙에 따르면 실행 컨텍스트를 실행 가능한 코드를 형상화하고 구분하는 추상적인 개념이라고 정의합니다.  
 쉽게 말하면 실행 컨텍스트는 **실행 가능한 코드가 실행되기 위해 필요한 환경** 이라고 말할 수 있습니다.
 
-#### 여기서 말하는 실행 가능한 코드는 아래와 같이 전역 코드와 함수 내 코드이다.
+#### 여기서 말하는 실행 가능한 코드는 아래와 같이 전역 코드와 함수 내 코드입니다.
 
-* 전역 코드 : 전역 영역에 존재하는 코드
-* 함수 코드 : 함수 내에 존재하는 코드
-* Eval 코드 : eval 함수로 실행되는 코드
+* 전역 코드 : 가장 베이스가 되는 실행 구역이다. 특정 '함수' 안에서 실행되는 코드가 아니라면 코드는 전역 컨텍스트에서 실행됩니다.
+* 함수 코드 : 함수가 호출될 때마다, 해당 함수에 대한 실행 컨텍스트가 생성됩니다.
+* Eval 코드 : eval 함수로 실행되는 코드로서 개발자가 많이 사용하지 않는 개념입니다.
 
 
-#### 자바스크립트 엔진은 코드를 실행하기 위하여 실행에 필요한 아래와 같은 정보들을 알고있어야 한다.
+#### 자바스크립트 엔진은 코드를 실행하기 위하여 실행에 필요한 아래와 같은 정보들을 알고있어야 합니다.
 
 * 변수 : 전역변수, 지역변수, 매개변수, 객체의 프로퍼티
 * 함수 선언
@@ -36,26 +36,6 @@ ECMAScript 스펙에 따르면 실행 컨텍스트를 실행 가능한 코드를
 > 스코프 체인은 식별자 중에서 객체(전역 객체 제외)의 프로퍼티가 아닌 식별자, 즉 변수를 검색하는 메커니즘이다.
 식별자 중에서 변수가 아닌 객체의 프로퍼티(물론 메소드도 포함된다)를 검색하는 메커니즘은 프로토타입 체인(Prototype Chain)이다.
 
-```javascript
-// Example Code                                           // 객체형식으로 표현 
-
-(1),(6) |  var name = 'jedi';                            '전역 컨텍스트': {
-(2),(3) |  function wow(word) {                            변수객체: {
-(11)    |    console.log(word + ' ' + name);                 arguments: null,
-           }                                                 variable: ['name', 'wow', 'say'],
-(4),(5) |  function say () {                               },
-(8)     |    var name = 'yoon';                            scopeChain: ['전역 변수객체'],
-(8)     |    console.log(name);                            this: window,
-(10)    |    wow('hello');                               }
-           }
-(7)     |  say();
-
-```
-  * 작동순서  
-    - 전역 컨텍스트가 생성되고 변수객체, scope chain, this가 들어옵니다.  
-    - variable은 해당 스코프의 변수들 --> [name , wow , say]  (wow랑 say는 호이스팅 때문에 선언과 동시에 대입)  
-        scope chain은 자기 자신인 전역 변수객체입니다.    
-        this는 따로 설정되어 있지 않아 현재는 window입니다.(생성자함수 new호출시 this를 바꿀수 있음.) 
 
 
 
@@ -89,6 +69,30 @@ ECMAScript 스펙에 따르면 실행 컨텍스트를 실행 가능한 코드를
     * this 프로퍼티에는 this 값이 할당된다. this에 할당되는 값은 함수 호출 패턴에 의해 결정된다.  
     
     
+## 실행 컨텍스트의 3가지 객체
+
+```javascript
+// Example Code                                           // 객체형식으로 표현 
+
+(1),(6) |  var name = 'jedi';                            '전역 컨텍스트': {
+(2),(3) |  function wow(word) {                            변수객체: {
+(11)    |    console.log(word + ' ' + name);                 arguments: null,
+           }                                                 variable: ['name', 'wow', 'say'],
+(4),(5) |  function say () {                               },
+(8)     |    var name = 'yoon';                            scopeChain: ['전역 변수객체'],
+(8)     |    console.log(name);                            this: window,
+(10)    |    wow('hello');                               }
+           }
+(7)     |  say();
+
+```
+  * 작동순서  
+    - 전역 컨텍스트가 생성되고 변수객체, scope chain, this가 들어옵니다.  
+    - variable은 해당 스코프의 변수들 --> [name , wow , say]  (wow랑 say는 호이스팅 때문에 선언과 동시에 대입)  
+        scope chain은 자기 자신인 전역 변수객체입니다.    
+        this는 따로 설정되어 있지 않아 현재는 window입니다.(생성자함수 new호출시 this를 바꿀수 있음.) 
+
+
 
 
 
