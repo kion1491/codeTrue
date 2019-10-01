@@ -80,14 +80,26 @@ ECMAScript 스펙에 따르면 실행 컨텍스트를 실행 가능한 코드를
            }                                                 variable: ['name', 'wow', 'say'],
 (4),(5) |  function say () {                               },
 (8)     |    var name = 'yoon';                            scopeChain: ['전역 변수객체'],
-(8)     |    console.log(name);                            this: window,
+(9)     |    console.log(name);                            this: window,
 (10)    |    wow('hello');                               }
            }
 (7)     |  say();
 
+
+// 객체형식으로 표현 
+
+'say 컨텍스트': {
+  변수객체: {
+    arguments: null,
+    variable: ['name'], // 초기화 후 [{ name: 'yoon' }]가 됨
+  },
+  scopeChain: ['say 변수객체', '전역 변수객체'],
+  this: window,
+}
+
 ```
 
-* 작동순서  
+* 기본 작동순서  
 
 001. 컨트롤이 실행 컨텍스트에 진입하기 이전에 유일한 **전역 객체(Global Object)가 생성**됩니다.
 002. 전역 객체 생성이후, 전역 코드로 컨트롤이 진입하면 **전역 실행 컨텍스트가 생성**되고 실행 컨텍스트 스택에 쌓입니다.
@@ -101,11 +113,17 @@ ECMAScript 스펙에 따르면 실행 컨텍스트를 실행 가능한 코드를
 
 005. **this value 결정**
 
+* 실행 작동순서  
 
+(1) variable은 해당 스코프의 변수선언 --> variable: ['name']  
+(2) variable은 해당 스코프의 변수선언 --> variable: [name , wow]  
+(3) wow는 호이스팅 때문에 선언과 동시에 대입  
+(4) variable은 해당 스코프의 변수선언 --> variable: [name , wow , say]  
+(5) say는 호이스팅 때문에 선언과 동시에 대입  
+(6) 
 
-- variable은 해당 스코프의 변수들 --> [name , wow , say]  (wow랑 say는 호이스팅 때문에 선언과 동시에 대입)  
-        scope chain은 자기 자신인 전역 변수객체입니다.    
-        this는 따로 설정되어 있지 않아 현재는 window입니다.(생성자함수 new호출시 this를 바꿀수 있음.) 
+     scope chain은 자기 자신인 전역 변수객체입니다.    
+     this는 따로 설정되어 있지 않아 현재는 window입니다.(생성자함수 new호출시 this를 바꿀수 있음.) 
 
 
 
