@@ -52,6 +52,21 @@ function sayWow() {         // (2) 선언과 동시에 초기화(호이스팅)
 }
 ```
 
+* 일단 처음 실행 시는 전역 컨텍스트가 먼저 생성되어 sayWow 함수는 함수 선언식이므로 컨텍스트 생성 후 바로 대입됩니다.
+
+
+```javascript 
+'전역 컨텍스트': {
+  변수객체: {
+    arguments: null,
+    variable: [{ sayWow: Function }, 'sayYeah'],
+  },
+  scopeChain: ['전역 변수객체'],
+  this: window,
+}
+```
+* 컨텍스트 생성 및 코드가 순차적으로 실행되는데 sayYeah는 대입되기 전에 호출해서 에러가 발생합니다.
+
 
 
 ## Reference
