@@ -7,7 +7,8 @@
 
 > “A closure is the combination of a function and the lexical environment within which that function was declared.”  
 클로저는 함수와 그 함수가 선언됐을 때의 렉시컬 환경(Lexical environment)과의 조합이다.  
-[스코프](/javascript/js_scope/README.md#스코프scope)는 함수를 호출할 때가 아니라 함수를 어디에 선언하였는지에 따라 결정된다. 이를 [렉시컬 스코핑](/javascript/js_scope/README.md#렉시컬-스코핑lexical-scoping)(Lexical scoping)라 한다. 
+[스코프](/javascript/js_scope/README.md#스코프scope)는 함수를 호출할 때가 아니라 함수를 어디에 선언하였는지에 따라 결정된다.  
+이를 [렉시컬 스코핑](/javascript/js_scope/README.md#렉시컬-스코핑lexical-scoping)(Lexical scoping)라 한다. 
 
 
 ## 개요
@@ -37,7 +38,7 @@ closure(); // 'jedi';
 
 ### 클로저로 사이드 이펙트 제어하기
 
-* 함수에서 값을 반환할 때를 제외하고 무언가를 행할 때 사이드 이펙트(side effects)가 발생합니다. 
+* 함수에서 값을 반환할 때를 제외하고 무언가를 행할 때 사이드 이펙트(side effects)가 발생합니다.   
 * 예를 들어 Ajax 요청이나 timeout을 생성할 때, 그리고 심지어 console.log를 선언하는 것도 사이드 이펙트 입니다.
 
 
@@ -87,7 +88,8 @@ const theSecret = secret('CSS Tricks is amazing')
 theSecret.saySecretCode()
 ```
 
-> 위의 예제에서 saySecretCode는 유일하게 secret함수 바깥에서 secretCode를 노출하는 함수(클로저)입니다. 따라서, 이런 함수를 특권 함수(privileged function)라고 부르기도 합니다.
+> 위의 예제에서 saySecretCode는 유일하게 secret함수 바깥에서 secretCode를 노출하는 함수(클로저)입니다.  
+따라서, 이런 함수를 특권 함수(privileged function)라고 부르기도 합니다.
 
 ## Reference
 
