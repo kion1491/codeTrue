@@ -3,7 +3,10 @@
 * **클로저**란 비공개 변수를 가질 수 있는 환경에 있는 함수를 말합니다.
 * 클로저는 자신이 생성될 때의 환경(Lexical environment)을 기억하는 함수라 말할수 있습니다.
 * 클로저는 외부 함수의 변수를 사용할 수 있기 때문에 대개 반환하여 사용합니다.
-* 클로저를 말할 때는 스코프/컨텍스트/비공개 변수와 함수의 관계를 항상 같이 말해주어야 합니다.
+* 클로저를 말할 때는 스코프/컨텍스트/비공개 변수와 함수의 관계를 항상 같이 말해주어야 합니다.  
+
+> “A closure is the combination of a function and the lexical environment within which that function was declared.”
+클로저는 함수와 그 함수가 선언됐을 때의 렉시컬 환경(Lexical environment)과의 조합이다.
 
 
 ## 개요
