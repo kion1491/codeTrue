@@ -108,8 +108,8 @@ ECMAScript 스펙에 따르면 실행 컨텍스트를 실행 가능한 코드를
 004. **Variable Instantiation(변수 객체화) 실행**  
     - 스코프 체인의 생성과 초기화가 종료하면 변수 객체화(Variable Instantiation)가 실행됩니다.  
   > * (Function Code인 경우) 매개변수(parameter)가 Variable Object의 프로퍼티로, 인수(argument)가 값으로 설정된다.    
-  > * 대상 코드 내의 함수 선언(함수 표현식 제외)을 대상으로 함수명이 Variable Object의 프로퍼티로, 생성된 함수 객체가 값으로 설정된다.(함수 호이스팅)    
-  > * 대상 코드 내의 변수 선언을 대상으로 변수명이 Variable Object의 프로퍼티로, undefined가 값으로 설정된다.(변수 호이스팅)
+  > * 대상 코드 내의 함수 선언(함수 표현식 제외)을 대상으로 함수명이 Variable Object의 프로퍼티로, 생성된 함수 객체가 값으로 설정된다.(함수 [호이스팅](/javascript/js_hoisting/README.md#호이스팅hoisting))    
+  > * 대상 코드 내의 변수 선언을 대상으로 변수명이 Variable Object의 프로퍼티로, undefined가 값으로 설정된다.(변수 [호이스팅](/javascript/js_hoisting/README.md#호이스팅hoisting))
 
 005. **this value 결정**  
     -  this value가 결정되기 이전에 this는 전역 객체를 가리키고 있다가 함수 호출 패턴에 의해 this에 할당되는 값이 결정된다.
