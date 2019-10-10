@@ -4,7 +4,7 @@
 
 2. tpl(공통/개별 tpl이 존재하며 대체로 layerpopup이 아닌이상 개별 js들이 각각 존재함)
 
-3. angular 버전 1점대를 사용중(자세한 버전은 서버에서 체크해야되서 제대로 가져오지 못했습니다.)
+3. AngularJS v1.2.28
 
 4. jQuery(1.12.1)버전을 사용중
 
@@ -142,7 +142,7 @@ tm.er.name이 true 일때는 error 이라는 클래스를 넣기위해 해당부
 </div>
 ```
 
-###간략요약 
+### 간략요약 
 ```
 - data-ng-if = true (아무런 반응없음)
 - data-ng-if = false (remove)
