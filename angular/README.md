@@ -26,7 +26,7 @@
             <div data-ng-view id="content" ></div>
             <div class="topbtn"><a href="#">TOP</a></div>
             <!-- tm 상품 -->
-            <div class="topbtn topbtn_tm"><a href="#"><img src="/default/images/common/img_topbtn.gif" alt="TOP"></a></div>			
+            <div class="topbtn topbtn_tm"></a></div>			
             <div class="topcall" id="floatingbanner">
                 <span class="call"></span>
                 <a href="#" class="fltop_btn"><img src="/default/images/common/btn_float_top.png" alt=""></a>
@@ -121,7 +121,8 @@
 ```
 ```
 그리고 비슷한 data-ng-show= 조건문도 if문과 거의 동일하여 바로 설명 드리겠습니다.
-data-ng-show 부분도 if문과 동일하게 조건이 맞을때(true)는 보이고 조건이 맞지않을때(false)는 안보이지만 다른점은 태그가 남아서 display(block/none)으로 처리되는게 특징입니다.
+data-ng-show 부분도 if문과 동일하게 조건이 맞을때(true)는 보이고 조건이 맞지않을때(false)는 안보이지만 다른점은 태그가
+남아서 display(block/none)으로 처리되는게 특징입니다.
 
 다음으로는 {{}}에 부분을 알려드리겠습니다.
 {{조건문? 'true 시 출력문' : 'false 시 출력문'}}
