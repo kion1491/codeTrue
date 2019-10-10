@@ -28,7 +28,7 @@
             <!-- tm 상품 -->
             <div class="topbtn topbtn_tm"><a href="#"><img src="/default/images/common/img_topbtn.gif" alt="TOP"></a></div>			
             <div class="topcall" id="floatingbanner">
-                <span class="call"><img src="/default/images/common/img_scroll_bn.gif" alt="먼저 상담하고 인터넷으로 가입하세요.1522-1135"></span>
+                <span class="call"></span>
                 <a href="#" class="fltop_btn"><img src="/default/images/common/btn_float_top.png" alt=""></a>
             </div>					
             <!-- chat area -->					
@@ -59,14 +59,14 @@
 	<div data-ng-if="tm.templete.newDlpoYn == 'Y'">
 		<div class="tm_main_img_set" data-ng-if="tm.templete.mdiaNoImgValid">
 			<img no-image ng-src="{{tm.templete.mainImg}}" alt="올바른 치아보험">
-			<a href="#" class="chatt_img_link chatt_teeth_img01" data-trigger-info='{"type":"keyword","id":"CTTG1802002"}'><img data-ng-src="{{WEBROOT}}/default/images/common/btn_layer.png" width="100%"  height="29" alt="임플란트"></a>
+			<a href="#" class="chatt_img_link chatt_teeth_img01"></a>
 		</div>
 	</div>
 	<!-- 구-DLPO -->
 	<div data-ng-if="tm.templete.newDlpoYn == 'N'">
 		<div class="tm_main_img_set" data-ng-if="tm.templete.mdiaNoImgValid">
 			<img no-image ng-src="{{tm.templete.mainImg}}" alt="올바른 치아보험 (1806)">
-			<a href="#" class="chatt_img_link chatt_teeth_img01" data-trigger-info='{"type":"keyword","id":"CTTG1802002"}'><img data-ng-src="{{WEBROOT}}/default/images/common/btn_layer.png" width="100%"  height="29" alt="임플란트"></a>
+			<a href="#" class="chatt_img_link chatt_teeth_img01"></a>
 		</div>
 	</div>
 	<!--//이미지형-->
