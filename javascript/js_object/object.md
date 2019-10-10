@@ -149,7 +149,7 @@ console.log(person.married); // undefined
 * 이는 생성자 함수가 아닌 일반 함수에 new 연산자를 붙여 호출하면 생성자 함수처럼 동작할 수 있다는 것을 의미한다. 따라서 일반적으로 생성자 함수명은 첫문자를 대문자로 기술하여 혼란을 방지하려는 노력을 한다.  
 * new 연산자와 함께 함수를 호출하면 this 바인딩이 다르게 동작한다. 
 
-## Pass-by-reference  
+## Pass-by-reference (참조에 의한 전달) 
 
 * object type을 객체 타입 또는 참조 타입이라 한다.  
 * **참조 타입**이란 객체의 모든 연산이 실제값이 아닌 참조값으로 처리됨을 의미한다.  
@@ -162,6 +162,56 @@ console.log(person.married); // undefined
 > **참조 타입 : 객체, 배열, 함수**  
 (참조 타입 데이터는 크기가 정해져 있지 않고 변수에 할당될 때 값이 직접 해당 변수에 저장될 수 없으며, 변수에는 데이터에 대한 참조만 저장된다. 참조는 참조 타입 데이터의 주소이지 해당 데이터의 값이 아니다.)
 ---
+
+
+
+```javascript 
+// Pass-by-reference
+var foo = {
+  val: 10
+}
+
+var bar = foo;
+console.log(foo.val, bar.val); // 10 10
+console.log(foo === bar);      // true
+
+bar.val = 20;
+console.log(foo.val, bar.val); // 20 20
+console.log(foo === bar);      // true
+```
+
+* foo 객체를 객체 리터럴 방식으로 생성하였다. 이때 변수 foo는 객체 자체를 저장하고 있는 것이 아니라 생성된 객체의 참조값(address)를 저장하고 있다.  * 변수 bar에 변수 foo의 값을 할당하였다. 변수 foo의 값은 생성된 객체를 가리키는 참조값이므로 변수 bar에도 같은 참조값이 저장된다.   
+* 즉, 변수 foo, bar 모두 동일한 객체를 참조하고 있다.  
+* 따라서 참조하고 있는 객체의 val 값이 변경되면 변수 foo, bar 모두 동일한 객체를 참조하고 있으므로 두 변수 모두 변경된 객체의 프로퍼티 값을 참조하게 된다. 객체는 참조(Reference) 방식으로 전달된다. 결코 복사되지 않는다.
+
+
+## Pass-by-value (값에 의한 전달) 
+
+* 원시 타입은 값(value)으로 전달된다. 즉, 값이 복사되어 전달된다. 이를 pass-by-value(값에 의한 전달)라 한다.  
+* 원시 타입은 값이 한번 정해지면 변경할 수 없다.  
+* (immutable) 또한 이들 값은 런타임(변수 할당 시점)에 메모리의 스택 영역(Stack Segment)에 고정된 메모리 영역을 점유하고 저장된다.
+
+
+
+```javascript 
+// Pass-by-value
+var a = 1;
+var b = a;
+
+console.log(a, b);    // 1  1
+console.log(a === b); // true
+
+a = 10;
+console.log(a, b);    // 1  10
+console.log(a === b); // false
+```
+
+* 변수 a는 원시 타입인 숫자 타입 1을 저장하고 있다.   
+* 원시 타입의 경우 값이 복사되어 변수에 저장된다.  
+* 즉, 참조 타입으로 저장되는 것이 아니라 값 자체가 저장되게 된다.   
+* 변수 b에 변수 a를 할당할 경우, 변수 a의 값 1은 복사되어 변수 b에 저장된다.
+
+
 
 ## Reference
 
