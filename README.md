@@ -24,7 +24,7 @@
 1. [호이스팅](/javascript/js_hoisting/README.md)
 1. [클로저](/javascript/js_closures/README.md)
 1. [객체](/javascript/js_object/object.md)
-1. [함수]
+1. [함수](/javascript/js_function/README.md)
 1. [콜백]
 1. [프로미스]
 1. [async/await]
