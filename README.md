@@ -23,7 +23,7 @@
 1. [실행컨텍스트](/javascript/js_context/README.md)
 1. [호이스팅](/javascript/js_hoisting/README.md)
 1. [클로저](/javascript/js_closures/README.md)
-1. [객체]
+1. [객체](/javascript/js_object/object.md)
 1. [함수]
 1. [콜백]
 1. [프로미스]
