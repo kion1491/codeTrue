@@ -35,6 +35,11 @@
 
 ```javascript 
 var emptyObject = {};
+/**********************/
+var hoyoung = {
+ firstName : "byon",
+ lastName : "hoyoung"
+}
 ```
 
 
