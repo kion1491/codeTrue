@@ -80,9 +80,9 @@ foo(1); // 1 undefined
   
 ## Reference
 
-- [함수 - zerocho](https://www.zerocho.com/category/JavaScript/post/572dcbbd2115c895b0f248fd)  
-- [함수 - poiemaweb](https://poiemaweb.com/js-function)  
-- [함수 - qodot](https://gist.github.com/qodot/1845fd02f14807d2eee9c58270ff1b2a#file-javascript-function-md)
+- [함수(zerocho)](https://www.zerocho.com/category/JavaScript/post/572dcbbd2115c895b0f248fd)  
+- [함수(poiemaweb)](https://poiemaweb.com/js-function)  
+- [함수(qodot)](https://gist.github.com/qodot/1845fd02f14807d2eee9c58270ff1b2a#file-javascript-function-md)
 
 
 
