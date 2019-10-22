@@ -2,7 +2,7 @@
 
 * WAI-ARIA는 Web Accessibility initiative - Accessible Rich Internet Application의 약자로 웹 페이지, 특히 동적 콘텐츠, 그리고 Ajax, HTML, JS 및 관련 기술로 개발된 사용자 인터페이스 구성요소의 접근성을 증가시키는 방법에 대해 규정한 W3C가 출판한 기술사양입니다.
 
-* - 출처: 위키피디아
+- 출처: 위키피디아
 
 ## WAI-ARIA 등장하는 계기
 
