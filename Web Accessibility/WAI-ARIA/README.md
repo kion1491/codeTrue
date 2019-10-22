@@ -4,11 +4,16 @@
 
   
 
-## WAI-ARIA 등장하는 계기
+## WAI-ARIA의 3대 요소
 
-* 과거 사이트를 조작하기 위해 사용하는 물리적 인터페이스는 키보드와 마우스 두개 뿐이였다. 그리고 대부분 미리 만들어진 HTML 요소에 JavaScript로 간단한 로직만 붙이는 정도이다. 그리고 시간이 지나서, 세상은 스마트폰으로 인한 모바일 시대로 들어서면서 스크린 터치라는 새로운 입력 방식을 사용하는 사용자가 많아지고, 다양성에 대한 사회적 인식의 변화로 전맹 시각장애인들의 사이트 접근성에 대한 요구가 증가하게 된다. 그리고 사용자의 요구에 따라 사이트에서 사용하는 UI들은 이제 HTML의 한계를 넘어서게된다. 그러한 요구에 따라 WAI-ARIA가 등장하게 되었다.
+* 역할(role), 상태(state), 속성(property)을 통하여 유저인터페이스의 요소들을 정의하여 인식하게 쉽게 만듭니다.
+1. 체크박스(checkbox), 버튼(button), 상태바(progress) 등을 포함하는 위젯 역할
+2. 아티클(article), 이미지(img), 장식요소(presentation)등 문서 구조역할  
+3. 메인영역(main), 검색영역(search), 네비게이션(navigation) 등 랜드마크(이정표)역할
+
 
 
 ## Reference
 
 -[WAI-ARIA란?] https://geonlee.tistory.com/142
+-[웹접근성 높이기] http://blog.naver.com/PostView.nhn?blogId=batuwa&logNo=220608177635
