@@ -27,6 +27,7 @@
     <p>로그인 후 이용할 수 있습니다.</p>
 </div>
 ```
+*** assertive값은 사용자의 현재 작업을 방해할 수 있기 때문에 중요도가 높은 내용을 선별하여 신중하게 적용해야 합니다.
 
 ## Reference
 - [레진 WAI-ARIA 가이드라인](https://github.com/lezhin/accessibility/blob/master/aria/README.md)
