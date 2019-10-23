@@ -5,4 +5,4 @@
 
 ## Web Accessibility
 
-### [WAI-ARIA](/WAI-ARIA/READ.ME)
+### [WAI-ARIA](https://github.com/kion1491/codeTrue/tree/master/Web%20Accessibility/WAI-ARIA)
