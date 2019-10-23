@@ -9,7 +9,7 @@
 
 일반적으로 role 속성의 값이 alert, alertdialog, dialog인 경우 사용하면 적절합니다. 그 밖에 Ajax 기법을 이용하여 실시간으로 내용을 갱신하는 모든 영역(채팅, 오류, 로그, 상태 표시)에 사용할 수 있습니다.
 
-'''
+```
 <!-- O: 대화상자 -->
 <section role="dialog" aria-live="polite" aria-modal="true" aria-labelledby="TITLE">
     <h2 id="TITLE">로그인</h2>
@@ -26,7 +26,7 @@
 <div role="alert" aria-live="assertive">
     <p>로그인 후 이용할 수 있습니다.</p>
 </div>
-'''
+```
 
 ## Reference
 - [레진 WAI-ARIA 가이드라인](https://github.com/lezhin/accessibility/blob/master/aria/README.md)
