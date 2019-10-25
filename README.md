@@ -25,10 +25,10 @@
 1. [클로저](/javascript/js_closures/README.md)
 1. [객체](/javascript/js_object/object.md)
 1. [함수](/javascript/js_function/README.md)
+1. [프로토타입](/javascript/js_prototype/README.md)
 1. [콜백]
 1. [프로미스]
 1. [async/await]
-1. [프로토타입]
 1. [패턴]
 
 
