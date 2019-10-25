@@ -1,15 +1,15 @@
 # 프로토타입(Prototype)
 
-* 자바스크립트의 함수는 일급 객체로, 코드의 재사용, 정보의 구성 및 은닉 등에 사용하는 모듈화의 근간이다.
-* 함수의 일반적 기능은 어떤 작업을 수행하는 문(statement)들의 집합을 정의하여 코드의 재사용에 목적이 있다. 
+* 자바스크립트는 객체지향 언어로서 명령형(imperative), 함수형(functional), 프로토타입 기반(prototype-based)의 멀티 패러다임 언어이다.  
+* 자바스크립트에는 클래스란 개념이 없어 객체 생성이나 상속이 다른 언어와 다르고 특히 OOP는 주로 프로토타입이란 메커니즘을 통해 이루어진다.  
 
 
   
 ## Reference
 
-- [함수(zerocho)](https://www.zerocho.com/category/JavaScript/post/572dcbbd2115c895b0f248fd)  
-- [함수(poiemaweb)](https://poiemaweb.com/js-function)  
-- [함수(qodot)](https://gist.github.com/qodot/1845fd02f14807d2eee9c58270ff1b2a#file-javascript-function-md)
+- [쉽게 이해하는 자바스크립트 프로토타입 체인 : TOAST Meetup)](https://meetup.toast.com/posts/104)  
+- [자바스크립트 객체지향 프로그래밍 : poiemaweb](https://poiemaweb.com/js-object-oriented-programming)  
+- [객체 지향 프로그래밍(생성자와 프로토타입) : ZeroCho](https://www.zerocho.com/category/JavaScript/post/573c2acf91575c17008ad2fc)
 
 
 
