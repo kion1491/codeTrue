@@ -9,6 +9,31 @@
 
 일반적으로 role 속성의 값이 alert, alertdialog, dialog인 경우 사용하면 적절합니다. 그 밖에 Ajax 기법을 이용하여 실시간으로 내용을 갱신하는 모든 영역(채팅, 오류, 로그, 상태 표시)에 사용할 수 있습니다.
 
+1. HTML을 의미 있게 작성한다.
+1. 탭 목록, 탭, 탭 패널(role="tablist|tab|tabpanel").
+1. 툴팁(role="tooltip").
+1. 성공(결과) 메시지(role="status").
+1. 오류(제안) 메시지(role="alert").
+1. 알럿 대화상자(role="alertdialog").
+1. 대화상자(role="dialog").
+1. 탐색(nav, role="navigation").
+1. 보충(aside, role="complementary").
+1. 의미 없음(role="none").
+1. 현재 상태(aria-current="token").
+1. 선택 상태(aria-selected="true|false|undefined").
+1. 팝업 상태(aria-haspopup="token")
+1. 확장 상태(aria-expanded="true|false|undefined")
+1. 눌림 상태(aria-pressed="tristate")
+1. 숨김 상태(aria-hidden="true|false|undefined")
+1. 오류 상태(aria-invalid="true|false|grammer|spelling")
+1. 제어 대상(aria-controls="ID reference list")
+1. 실시간(aria-live="token")
+1. 간결한 설명 참조(aria-labelledby="ID reference list")
+1. 간결한 설명(aria-label="string")
+1.자세한 설명 참조(aria-describedby="ID reference list")
+1. 오류 설명(aria-errormessage="ID reference")
+1. 모달(aria-modal="true|false")
+
 ```
 <!-- O: 대화상자 -->
 <section role="dialog" aria-live="polite" aria-modal="true" aria-labelledby="TITLE">
