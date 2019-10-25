@@ -35,24 +35,37 @@
 1. 모달(aria-modal="true|false")
 
 ```
-<!-- O: 대화상자 -->
-<section role="dialog" aria-live="polite" aria-modal="true" aria-labelledby="TITLE">
-    <h2 id="TITLE">로그인</h2>
-    <form>
-        <label for="ID">아이디</label>
-        <input id="ID">
-        <label for="PW">비밀번호</label>
-        <input id="PW" type="password">
-        <button>로그인</button>
-    </form>
-</section>
+<!-- 역할(roles) -->
+<element role="tablist">
+<element role="tab">
+<element role="tabpanel">
+<element role="tooltip">
+<element role="status">
+<element role="alert">
+<element role="alertdialog">
+<element role="dialog">
+<element role="navigation">
+<element role="complementary">
+<element role="none">
 
-<!-- O: 알럿 -->
-<div role="alert" aria-live="assertive">
-    <p>로그인 후 이용할 수 있습니다.</p>
-</div>
+<!-- 상태(states) -->
+<element aria-current="page|step|location|date|time|true|false(default)">
+<element aria-selected="false|true|undefined(default)">
+<element aria-haspopup="true|menu|dialog|listbox|tree|grid|false(default)">
+<element aria-expanded="true|false|undefined(default)">
+<element aria-pressed="true|false|mixed|undefined(default)">
+<element aria-hidden="true|false|undefined(default)">
+<element aria-invalid="true|false(default)|grammer|spelling">
+
+<!-- 속성(properties) -->
+<element aria-controls="ID reference list">
+<element aria-live="polite|assertive|off(default)">
+<element aria-labelledby="ID reference list">
+<element aria-label="string">
+<element aria-describedby="ID reference list">
+<element aria-errormessage="ID reference">
+<element aria-modal="true|false(default)">
 ```
-* assertive값은 사용자의 현재 작업을 방해할 수 있기 때문에 중요도가 높은 내용을 선별하여 신중하게 적용해야 합니다.
 
 ## Reference
 - [레진 WAI-ARIA 가이드라인](https://github.com/lezhin/accessibility/blob/master/aria/README.md)
