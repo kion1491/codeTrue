@@ -4,6 +4,8 @@
 
 ## HTML Guide
 ### HTML doctype
+
+- HTML 문서 시작시에 문서타입을 선언해 줍니다.
 ```
 <!DOCTYPE html>
 <html>
