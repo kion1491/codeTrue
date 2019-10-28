@@ -38,6 +38,30 @@
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 ```
 
+### CSS, JavaScript 삽입
+CSS와 JavaScript를 불러올 때 type 속성을 생략합니다.
+```
+<!-- External CSS -->
+<link rel="stylesheet" href="code-guide.css">
+
+<!-- In-document CSS -->
+<style> ... </style>
+
+<!-- JavaScript -->
+<script src="code-guide.js"></script>
+```
+
+### 속성(attr) 선언 순서
+HTML 태그 속성은 가독성을 위해 아래 순서대로 작성합니다.
+
+1. 선택자로 사용하는 id, class 속성은 가장 앞에 선언합니다.
+1. 콘텐츠를 설명하는 alt, title, role, aria-* 속성은 가장 뒤에 선언합니다.
+```
+<a id="..." class="..." href="#">Example link</a>
+<input class="form-control" type="text">
+<img src="..." alt="..." title="...">
+```
+
 ## 마크업 가이드 - 참고자료
 
 * [레진 마크업 가이드](https://github.com/lezhin/markup-guide)
