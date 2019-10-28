@@ -3,9 +3,12 @@
 
 
 ## HTML Guide
-### HTML 작성규칙
+### HTML doctype
 ```
-ddd
+<!DOCTYPE html>
+<html>
+    ...
+</html>
 ```
 
 
