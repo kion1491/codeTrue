@@ -27,6 +27,7 @@
 ```
 
 ### 인코딩 설정
+문자열 인코딩을 명시적으로 선언합니다.
 ```
 <head>
     <meta charset="UTF-8">
@@ -34,6 +35,7 @@
 ```
 
 ### IE 호환모드 설정 
+인터넷 익스플로러가 항상 최신 버전의 레이아웃 엔진을 사용하여 문서를 렌더링하도록 지정합니다.
 ```
 <meta http-equiv="X-UA-Compatible" content="IE=Edge">
 ```
@@ -51,6 +53,7 @@ CSS와 JavaScript를 불러올 때 type 속성을 생략합니다.
 <script src="code-guide.js"></script>
 ```
 
+
 ### 속성(attr) 선언 순서
 HTML 태그 속성은 가독성을 위해 아래 순서대로 작성합니다.
 
@@ -61,6 +64,15 @@ HTML 태그 속성은 가독성을 위해 아래 순서대로 작성합니다.
 <input class="form-control" type="text">
 <img src="..." alt="..." title="...">
 ```
+
+### Boolean 속성
+불리언 속성의 값은 지정하지 않습니다.
+```
+<input type="text" disabled>
+<input type="checkbox" value="1" checked>
+<option value="1" selected>1</option>
+```
+
 
 ## 마크업 가이드 - 참고자료
 
