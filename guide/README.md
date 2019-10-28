@@ -261,5 +261,5 @@ section.tweet > header.tweet__header { ... }
 ## 마크업 가이드 - 참고자료
 
 * [레진 마크업 가이드](https://github.com/lezhin/markup-guide)
-* [CODE GUIDE@](https://codeguide.co/)
+* [mdo's CODE GUIDE](https://codeguide.co/)
 
