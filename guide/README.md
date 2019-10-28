@@ -18,6 +18,25 @@
 </html>
 ```
 
+### 언어(lang) 속성
+- 영어: en
+- 한국어: ko
+- 일본어: ja
+```
+<html lang="ko">
+```
+
+### 인코딩 설정
+```
+<head>
+    <meta charset="UTF-8">
+</head>
+```
+
+### IE 호환모드 설정 
+```
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+```
 
 ## 마크업 가이드 - 참고자료
 
