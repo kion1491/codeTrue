@@ -207,7 +207,7 @@ HTML 태그 속성은 가독성을 위해 아래 순서대로 작성합니다.
 ```
 
 ### 클래스 작명
-1. 클래스 이름 규칙은 BEM(Block Element Modifier)스타일을 따릅니다.
+1. 클래스 이름 규칙은 [BEM(Block Element Modifier)](http://getbem.com/naming/) 스타일을 따릅니다.
 1. 클래스 이름은 영문 카멜케이스(camelCase), 숫자, 더블 대시(--), 더블 언더스코어(__) 만 사용합니다.
 1. 짧고 간결하게 작성하되 축약하지 않습니다. .btn과 같이 쉽게 의미를 유추 할 수 있는 축약은 괜찮지만 .bn와 같이 의미를 파악하기 어려운 축약은 사용하지 않습니다.
 1. 시각적 표현 대신 의미, 구조, 목적을 담아 작명합니다.
@@ -258,8 +258,12 @@ section.tweet > header.tweet__header { ... }
 .modal__footer--disabled { ... }
 ```
 
+
+
+
+
 ## 마크업 가이드 - 참고자료
 
 * [레진 마크업 가이드](https://github.com/lezhin/markup-guide)
 * [mdo's CODE GUIDE](https://codeguide.co/)
-
+* [notes's css 방법론](https://gomdoreepooh.github.io/notes/smacss-bem-oocss)
