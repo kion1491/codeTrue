@@ -52,4 +52,4 @@ input[type=submit] {-webkit-appearance: none; appearance: none; /* for ios */}
 
 ### Referance
 - [WPPP Class Day 23 - reset.css 및 CSS 작성팁](https://sereni-ty.tistory.com/51)
-- [다룸 컨벤션](http://darum.daum.net/convention/css/css_convention)
+- [다룸 CSS 컨벤션](http://darum.daum.net/convention/css/css_convention)
