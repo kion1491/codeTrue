@@ -94,7 +94,7 @@ console.log(him); // Person { name: 'choi' }
 
 ## 상속 (Inheritance)  
 
-<img src="./proto.png" width="80%">
+<img src="./proto.png" width="100%">
 
 * 자바스크립트는 기본적으로 프로토타입을 통해 상속을 구현한다.   
 * 이것은 프로토타입을 통해 객체가 다른 객체로 직접 상속된다는 의미이다.   
