@@ -9,35 +9,20 @@
 - 파일 저장 시 UTF-8 인코딩으로 저장합니다.
 - 파일의 맨 마지막은 줄바꿈으로 끝납니다.
 
-### HTML doctype
+### HTML lay-out
 - HTML 문서 시작시에 문서타입을 선언해 줍니다.
+- 언어(lang) 속성을 작성합니다. (ex. 영어-en, 한국어-ko...)
+- 문자열 인코딩을 명시적으로 선언합니다.
+- 인터넷 익스플로러가 항상 최신 버전의 레이아웃 엔진을 사용하여 문서를 렌더링하도록 지정합니다.
 ```
 <!DOCTYPE html>
-<html>
-    ...
-</html>
-```
-
-### 언어(lang) 속성
-- 영어: en
-- 한국어: ko
-- 일본어: ja
-```
 <html lang="ko">
-```
-
-### 인코딩 설정
-문자열 인코딩을 명시적으로 선언합니다.
-```
 <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta charset="UTF-8">
 </head>
-```
-
-### IE 호환모드 설정 
-인터넷 익스플로러가 항상 최신 버전의 레이아웃 엔진을 사용하여 문서를 렌더링하도록 지정합니다.
-```
-<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+...
+</html>
 ```
 
 ### CSS, JavaScript 삽입
