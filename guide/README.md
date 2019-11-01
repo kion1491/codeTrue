@@ -176,19 +176,17 @@ HTML 태그 속성은 가독성을 위해 아래 순서대로 작성합니다.
 ```
 
 ### 주석
-주석은 간결하게 작성합니다.
+주석은 알아보기 쉽게 작성합니다.
 ```
-/* Bad example */
-/* Modal - Wrapping element for .modal-header, .modal-body, modal-footer  */
-.modal {
-    ...
-}
-
-/* Good example */
-/* Modal */
-.modal {
-    ...
-}
+/* 190416 : KJW : 멜다방 룰렛 이벤트 */
+.melda_event_cont.roulette_evt {margin:0 auto; max-width:720px;}
+.melda_event_cont.roulette_evt img[class*="roulette_con"]{position:absolute; left:50%; transform:translate(-50%);}
+.melda_event_cont.roulette_evt .roulette_con01{width:86%; top:39.6%;}
+.melda_event_cont.roulette_evt .roulette_con02{position:absolute; left:50%; width:75.6%; top:42.8%; transform:translate(-50%);}
+.melda_event_cont.roulette_evt .roulette_con02 img{transform-origin:center center;}
+.melda_event_cont.roulette_evt .roulette_con02.on img{transition:all 5s ease-out;}
+.melda_event_cont.roulette_evt .roulette_con03{width:7.2%; top:36.9%;}
+.melda_event_cont.roulette_evt .btn_01{position:absolute; width:24.2%; left:50%; top:59.4%; transform:translate(-50%);}
 ```
 
 ### 클래스 작명
