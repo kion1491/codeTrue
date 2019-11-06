@@ -76,14 +76,14 @@ HTML 태그 속성은 가독성을 위해 아래 순서대로 작성합니다.
 
 축약 가능한 값을 축약합니다.
 ```
-    color: #fff;
-    font-weight: 400;
-    font-weight: 700;
-    border: 0;
-    opacity: .5;
-    border-width: 0;
-    background-size: 100%;
-    background-position: 50%;
+color: #fff;
+font-weight: 400;
+font-weight: 700;
+border: 0;
+opacity: .5;
+border-width: 0;
+background-size: 100%;
+background-position: 50%;
 ```
 
 의미있는 블럭 기준으로 빈 줄을 포함합니다.
