@@ -1,10 +1,10 @@
-# 마크업 가이드
+# 메리츠 운영 가이드
 * 작업하는데 있어서 조금 더 원활하게 조금 더 규칙적인 작업의 표준을 만들고자 가이드를 작성합니다. 내용은 팀원들과 합의하에 언제든지 변경 및 수정가능함을 고지합니다.
 
 
 ## HTML Guide
 ### 에디터 설정
-- 들여쓰기는 공백문자 4칸으로 합니다.(2칸?? - 어느게 나을런지요?)
+- 들여쓰기는 공백문자 4칸으로 합니다.
 - 파일 저장 시 줄 끝 공백문자를 제거합니다.
 - 파일 저장 시 UTF-8 인코딩으로 저장합니다.
 - 파일의 맨 마지막은 줄바꿈으로 끝납니다.
@@ -62,42 +62,20 @@ HTML 태그 속성은 가독성을 위해 아래 순서대로 작성합니다.
 ### CSS 문법
 선택자를 그룹핑하는 경우 쉼표(,) 뒤에서 줄바꿈합니다.
 ```
-/* X */
-.selector1, .selector2 { ... }
-
-/* O */
 .selector1,
 .selector2 { ... }
 ```
 
-속성값에는 홑따옴표('')를 사용합니다.
+속성값에는 홑따옴표("")를 사용합니다.
 ```
-/* X */
-[type=text] { ... }
 [type="text"] { ... }
-{ background: url(ex.png); }
-{ background: url("ex.png"); }
-
-/* O: 속성 선택자 속성값에 홑따옴표 사용 */
-[type='text'] { ... }
 
 /* O: CSS 속성값에 홑따옴표 사용 */
-{ background: url('ex.png'); }
+{ background: url("ex.png"); }
 ```
 
 축약 가능한 값을 축약합니다.
 ```
-/* X */
-    color: #ffffff;
-    font-weight: normal;
-    font-weight: bold;
-    border: none;
-    opacity: 0.5;
-    border-width: 0px;
-    background-size: 100% auto;
-    background-position: 50% 50%;
-
-/* O */
     color: #fff;
     font-weight: 400;
     font-weight: 700;
@@ -110,25 +88,13 @@ HTML 태그 속성은 가독성을 위해 아래 순서대로 작성합니다.
 
 의미있는 블럭 기준으로 빈 줄을 포함합니다.
 ```
-/* X: 선택자 또는 속성 사이에 빈 줄 금지 */
-.selector1 { ... }
-
-.selector2 {
-
-    property: value;
-
-    property: value;
-
-}
-
-/* O: 의미있는 블럭 기준으로 빈 줄 포함 */
 /* 헤더 */
 .header { ... }
-.header__element { ... }
+.header_element { ... }
 
 /* 풋터 */
 .footer { ... }
-.footer__element { ... }
+.footer_element { ... }
 ```
 
 ### 속성(property) 선언 순서
@@ -191,20 +157,11 @@ HTML 태그 속성은 가독성을 위해 아래 순서대로 작성합니다.
 
 ### 클래스 작명
 1. 클래스 이름 규칙은 [BEM(Block Element Modifier)](http://getbem.com/naming/) 스타일을 따릅니다.
-1. 클래스 이름은 영문 카멜케이스(camelCase), 숫자, 더블 대시(--), 더블 언더스코어(__) 만 사용합니다.
+1. 클래스 이름은 영문 언더스코어(_) 만 사용합니다.
 1. 짧고 간결하게 작성하되 축약하지 않습니다. .btn과 같이 쉽게 의미를 유추 할 수 있는 축약은 괜찮지만 .bn와 같이 의미를 파악하기 어려운 축약은 사용하지 않습니다.
 1. 시각적 표현 대신 의미, 구조, 목적을 담아 작명합니다.
-1. 변화 또는 상태를 나타내는 추가 클래스는 블록 또는 요소 이름에 더블 대시(--)를 붙여 작명합니다.
 
 ```
-/* Bad example */
-.sform { ... }
-.themeLezhin { ... }
-.sf-input { ... }
-.sf-btn { ... }
-.SearchformButtonDisabled { ... }
-
-/* Good example */
 .blockName { ... }                              // Block
 .blockName__elementName { ... }                 // Element
 .blockName--modifierName { ... }                // Block Modifier
@@ -216,12 +173,6 @@ HTML 태그 속성은 가독성을 위해 아래 순서대로 작성합니다.
 - 선택자 우선순위(specificity)를 높이는 조합과 중첩을 사용하지 않습니다. 조합과 중첩은 3회를 초과하지 않습니다.
 - 여러 클래스를 묶을 때 쉼표 후 개행합니다.
 ```
-/* Bad example */
-section.tweet > header { ... }
-section.tweet > header.tweet__header { ... }
-.tweet > .tweet__header, .tweet > .tweet__username { ... }
-
-/* Good example */
 .tweet { ... }
 .tweet__header,
 .tweet__username { ... }
@@ -232,6 +183,7 @@ section.tweet > header.tweet__header { ... }
 - 계층 구조의 순서에 따라 작성합니다.
 - 코드 블럭을 분리할 때 공백(줄 바꿈)을 일관성 있게 사용합니다.
 - 여러개의 *.scss 파일을 나눌 때, 페이지보다는 컴포넌트 별로 나눕니다.
+
 ```
 /* Modal: modal.scss */
 .modal { ... }
