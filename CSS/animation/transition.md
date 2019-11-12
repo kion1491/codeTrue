@@ -28,17 +28,18 @@
 - 변화하는 속도의 패턴을 지정한다.
 - 속성 값에는 9가지 패턴이 있다.
 
-|<center>속성값</center>|<center>설명</center>|<center>동일값</center>|<center>Header3</center>|
+
+|<center>속성값</center>|<center>설명</center>|<center>동일값</center>|<center>동일 steps 값</center>|
 |:--------|:--------:|--------:|--------:|
 |**ease**|<center>천천히 시작해서 도중에 빨라졌다가 느려지면서 끝난다</center>|(0.25, 0.1, 0.25, 1)|  |
-|**ease-in**|<center>천천히 시작해서 점점 빨라지면서 끝난다 </center>|(0.42, 0, 1, 1)| |
-|**ease-out**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
-|**ease-in-out**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
-|**linear**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
-|**steps(단계수, start end)**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
-|**step-start**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
-|**step-endt**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
-|**cubic-beizier(x1, y1, x2, y2)**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
+|**ease-in**|<center>천천히 시작해서 빨라지면서 끝난다 </center>|(0.42, 0, 1, 1)| |
+|**ease-out**|<center>빨리 시작해서 느려지면서 끝난다</center>|(0, 0, 0.58, 1)|  |
+|**ease-in-out**|<center>천천히시작하고, 천천히 가속해서 느려지면서 끝난다</center>|(0.42, 0, 0.58, 1)| |
+|**linear**|<center>일정한 속도로변화한다.</center>|(0, 0, 1, 1)| |
+|**steps(단계수, start end)**|<center>단계수로 균등한 간격을 분할해서 변화한다.</center>|  | |
+|**step-start**|  | |(1, start)|
+|**step-end**| |  |(1, end)|
+|**cubic-beizier(x1, y1, x2, y2)**|3차 곡선을 통해 변화타이밍을 조절하는 방법이다|  | |
 
 
 #### 한번에 표현하기
