@@ -41,7 +41,7 @@
 |**ease-out**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
 |**ease-in-out**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
 |**linear**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
-|**steps(단계수, start|end)**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
+|**steps(단계수, start`|`end)**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
 |**step-start**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
 |**step-endt**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
 |**cubic-beizier(x1, y1, x2, y2)**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
