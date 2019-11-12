@@ -34,8 +34,15 @@
 
 
 
-|<center>점심</center>|<center>저녁</center>|<center>Header3</center>|<center>Header3</center>|
+|<center>속성값</center>|<center>설명</center>|<center>동일값</center>|<center>Header3</center>|
 |:--------|:--------:|--------:|--------:|
-|**cell 1x1**|<center>cell 1x2 </center>|*cell 1x3*|*cell 1x3*|
-|**cell 2x1**|<center>cell 2x2 </center>|*cell 2x3*|*cell 1x3*|
-|**cell 3x1**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
+|**ease**|<center>cell 1x2 </center>|*cell 1x3*|*cell 1x3*|
+|**ease-in**|<center>cell 2x2 </center>|*cell 2x3*|*cell 1x3*|
+|**ease-out**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
+|**ease-in-out**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
+|**linear**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
+|**steps(단계수, start|end)**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
+|**step-start**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
+|**step-endt**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
+|**cubic-beizier(x1, y1, x2, y2)**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
+
