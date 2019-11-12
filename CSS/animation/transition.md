@@ -25,14 +25,8 @@
 - 단위는 초(s)나 밀리초(ms)를 사용한다.
 
 #### transition-timing-function
-- 
-
-
-#### 한번에 표현하기
-- transition : background-color 2s ease-in-out 3s;
-
-
-
+- 변화하는 속도의 패턴을 지정한다.
+- 속성 값에는 9가지 패턴이 있다.
 
 |<center>속성값</center>|<center>설명</center>|<center>동일값</center>|<center>Header3</center>|
 |:--------|:--------:|--------:|--------:|
@@ -41,8 +35,17 @@
 |**ease-out**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
 |**ease-in-out**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
 |**linear**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
-|**steps(단계수, start`|`end)**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
+|**steps(단계수, start end)**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
 |**step-start**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
 |**step-endt**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
 |**cubic-beizier(x1, y1, x2, y2)**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
+
+
+#### 한번에 표현하기
+- transition : background-color 2s ease-in-out 3s;
+
+
+
+
+
 
