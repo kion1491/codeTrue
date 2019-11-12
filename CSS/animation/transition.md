@@ -30,8 +30,8 @@
 
 |<center>속성값</center>|<center>설명</center>|<center>동일값</center>|<center>Header3</center>|
 |:--------|:--------:|--------:|--------:|
-|**ease**|<center>cell 1x2 </center>|*cell 1x3*|*cell 1x3*|
-|**ease-in**|<center>cell 2x2 </center>|*cell 2x3*|*cell 1x3*|
+|**ease**|<center>천천히 시작해서 도중에 빨라졌다가 느려지면서 끝난다</center>|(0.25, 0.1, 0.25, 1)|  |
+|**ease-in**|<center>천천히 시작해서 점점 빨라지면서 끝난다 </center>|(0.42, 0, 1, 1)| |
 |**ease-out**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
 |**ease-in-out**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
 |**linear**|<center>cell 3x2 </center>|*cell 3x3*|*cell 1x3*|
