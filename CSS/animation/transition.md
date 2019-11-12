@@ -20,10 +20,13 @@
 - 어느 정도의 시간 동안 애니메이션을 동작하게 할 것인가를 설정한다.
 - 단위는 초(s)나 밀리초(ms)를 사용한다.
 
-|  <center>속성값</center> | <center>설명</center> |  <center>동일한 cubic-bezier()값</center> |<center>설명</center> |
-|:--------|:--------:|--------:|
-|**cell 1x1** | <center>cell 1x2 </center> |*cell 1x3* |
-|**cell 2x1** | <center>cell 2x2 </center> |*cell 2x3* |
-|**cell 3x1** | <center>cell 3x2 </center> |*cell 3x3* |
+#### transition-delay
+- 실제로 애니메이션이 동작하기 전까지 딜레이 되는 시간.
+- 단위는 초(s)나 밀리초(ms)를 사용한다.
 
-#### 
+#### transition-timing-function
+- 
+
+
+#### 한번에 표현하기
+- transition : background-color 2s ease-in-out 3s;
