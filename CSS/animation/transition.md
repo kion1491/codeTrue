@@ -34,7 +34,7 @@
 
 
 
-|  <center>Header1</center> |  <center>Header2</center> |  <center>Header3</center> |
+|  <center>점심</center> |  <center>저녁</center>| <center>Header3</center> |
 |:--------|:--------:|--------:|
 |**cell 1x1** | <center>cell 1x2 </center> |*cell 1x3* |
 |**cell 2x1** | <center>cell 2x2 </center> |*cell 2x3* |
