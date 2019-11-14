@@ -17,6 +17,7 @@
 ## Guide 
 
 * [퍼블리싱 가이드](/guide/)
+* [angular](/angular/)
 
 
 ## Javascript
