@@ -14,10 +14,10 @@
 * [프론트엔드 로드맵](https://github.com/devJang/developer-roadmap)
 
 
-## Guide 
+## Operation 
 
 * [퍼블리싱 가이드](/guide/)
-* [angular](/angular/)
+* [](/angular/)
 
 
 ## Javascript
