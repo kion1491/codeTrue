@@ -16,7 +16,7 @@
 
 ## Guide 
 
-* [퍼블리싱 가이드](https://github.com/guide/)
+* [퍼블리싱 가이드](https://github.com/guide/README.md)
 
 
 ## Javascript
