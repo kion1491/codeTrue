@@ -17,7 +17,7 @@
 ## Operation 
 
 * [퍼블리싱 가이드](/guide/)
-* [](/angular/)
+* [앵귤러](/angular/)
 
 
 ## Javascript
