@@ -209,3 +209,4 @@ background-position: 50%;
 * [레진 마크업 가이드](https://github.com/lezhin/markup-guide)
 * [mdo's CODE GUIDE](https://codeguide.co/)
 * [notes's css 방법론](https://gomdoreepooh.github.io/notes/smacss-bem-oocss)
+* [다룸의 가이드](http://ui.daum.net/convention/html)
