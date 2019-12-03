@@ -1,0 +1,51 @@
+/* 190411 : BHY : 챗봇 닫기생성 */
+.chatarea{ opacity: 0;position: fixed;width:114px;height:128px;right:4px;right:0.3vw;margin-left:488px;bottom: 32px;z-index:100;}
+.chatarea .chatbotClose {position: absolute;right:0;top:0;z-index:10;width: 11px;height: 11px;}
+.chatarea .chatbotClose a.btnClose {display: block;width: 11px;height: 11px;text-align: right;}
+
+@media (min-width:1501px) {
+ .chatarea{right:auto;left:50%;margin-left:624px;}
+ .chatting_bot_wrap{right: auto;left: 50%;margin-left:-758px}
+}
+
+.ani_wrap{position:relative;width:114px;height:128px;}
+.ani_wrap .chat_mond{position:relative;z-index:10;}
+.ani_wrap .chat_mond  div {position:absolute;}
+.chat_step02,.chat_step03,.chat_step04,.txt_chat01,.txt_chat01,.txt_chat_last{display:none;}
+/* .chat_bubble{transition:all 0.5s;position:absolute;right:141px;bottom:53px;border-radius:27px 27px 0 27px; padding:14px 27px 14px;width:42px;min-height:20px;background:rgba(0, 0, 0, .75);z-index:9;display:none;opacity: 0;box-shadow:3px 10px 18px rgba(0, 0, 0, 0.2)}
+.chat_bubble > span{font-size:18px;color:#fff !important;vertical-align: top;white-space: nowrap;line-height:30px}
+.chat_bubble:before{content:"";position:absolute;display:block;width:9px;height:9px;bottom:-9px;right:30px;}
+
+.chat_bubble.chatt_type{background:rgba(0, 0, 0, .75)}
+.chat_bubble.now_type{background:rgba(0, 0, 0, .75)}
+.chat_bubble.nuts_type{background:rgba(0, 0, 0, .75)}
+.chat_bubble.now_type2{background:rgba(0, 0, 0, .75)} */
+
+.txt_chat_last{position:absolute;display: block;right:141px;bottom:53px;border-radius:27px 27px 0 27px; padding:14px 27px 14px;min-height:20px;background:rgba(0, 0, 0, .75);z-index:9;box-shadow:3px 10px 18px rgba(0, 0, 0, 0.2)}
+.txt_chat_last > span{font-size:18px;color:#fff !important;vertical-align: top;white-space: nowrap;}
+.txt_chat_last em{display:inline-block;margin-left:100px;width:21px;height:14px;background:url("../images/ico_bubble_arrow.png") no-repeat}
+.txt_chat_last:before{content:"";position:absolute;display:block;width:9px;height:9px;bottom:-9px;right:30px;}
+
+.dot_wrap{height:16px;}
+/* .chat_dot{display:inline-block;width:4px;height:4px;margin:6px 3px 0 3px;}
+
+.chat_dot01{-webkit-animation-name:chat_ani_dot;animation-name:chat_ani_dot;-webkit-animation-duration:1.5s;animation-duration:1.5s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-direction:normal;animation-direction:normal}
+.chat_dot02{-webkit-animation-name:chat_ani_dot;animation-name:chat_ani_dot;-webkit-animation-delay:0.5s;animation-delay:0.5s;-webkit-animation-duration:1.5s;animation-duration:1.5s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-direction:normal;animation-direction:normal}
+.chat_dot03{-webkit-animation-name:chat_ani_dot;animation-name:chat_ani_dot;-webkit-animation-delay:1s;animation-delay:1s;-webkit-animation-duration:1.5s;animation-duration:1.5s;-webkit-animation-timing-function:linear;animation-timing-function:linear;-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite;-webkit-animation-direction:normal;animation-direction:normal}
+
+@keyframes chat_ani_dot{0%,100%{transform:scale(0.7,0.7)}
+50%{transform:scale(1.4,1.4)}
+}
+@-webkit-keyframes chat_ani_dot{0%,100%{-webkit-transform:scale(0.7,0.7)}
+50%{-webkit-transform:scale(1.4,1.4)}
+} */
+/* e:20171109 채팅유도 모션관련 */
+
+.chat_agree{display:none;position:fixed;right:42px;bottom:33px;width:358px;height:530px;max-height: 530px;z-index: 1001;box-shadow: 4px 4px 10px #999;border:1px solid #ababab; border-radius: 10px; overflow: hidden;} /* 180409수정및 추가 */
+
+/*180319 챗봇 스타일변경!!*/
+/* .chat_mond{transition:all 0.5s;} */
+.chat_mond .chat_mondi_con{position: absolute;right: 0; top: 0;width: 120px;height: 120px;overflow: hidden;background: rgba(255, 255, 255, 0); border-radius: 50%; text-align: center; z-index: 1}
+.chat_mond .chat_mondi_con + img{position: absolute; right: -10px;top: -2px}
+.chat_mond .chat_mondi_con .chat_mondi_con_img{margin:11px 0 0;height:63px;overflow:hidden}
+.chat_mond .chat_mondi_con>div{position: static;font-family:"RixSGo B";color:#fff;font-size:14px;line-height: 17px;margin: 5px 0 0;}

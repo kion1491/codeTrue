@@ -5,188 +5,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>CSS</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="javascript/main.js"></script>
   </head>
-
   <body>
-    <!-- example 01 -->
-    <div class="ment_box">
-      브라우져의 크기에 따라 크기가 변하는 박스들을 나열 해보도록 하겠다.
-    </div>
-    <style>
-      .box_01 {
-        width: 33%;
-        height: 300px;
-        background-color: blue;
-        display: inline-block;
-      }
-    </style>
+    <div class="container">
+      <div>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br>
+        
+        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,
+        fringilla vel, aliquet nec, vulputate eget, arcu.<br>
+        
+        In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+        tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br>
+        
+        Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis,
+        feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.<br>
+        
+        Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+        Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.<br>
+        
+        Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec
+        vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo.
+        Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit
+        cursus nunc,
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br>
 
-    <div class="box_01"></div>
-    <div class="box_01"></div>
-    <div class="box_01"></div>
+        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede
+        justo,
+        fringilla vel, aliquet nec, vulputate eget, arcu.<br>
 
-    <!-- example 02 -->
-    <div class="ment_box">
-      만약 박스들 사이에 일정한 간격을 두고 싶다고 했을 때,<br />
-      예전에는 사이사이에 margin을 두는 방법이 있었다.<br />
-      그리고,<br />
-      다 깨진다.
-    </div>
-    <style>
-      .box_02 {
-        width: 300px;
-        height: 300px;
-        background-color: red;
-        display: inline-block;
-      }
+        In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+        tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br>
 
-      .aaa {
-        margin-right: 25.855%;
-      }
-      /* .box_02:first-child {
-        margin-right: 20%;
-      } */
-      .box_02:last-child {
-        margin-left: 25.855%;
-      }
-    </style>
+        Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis,
+        feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.<br>
 
-    <div class="box_02 aaa"></div>
-    <div class="box_02"></div>
-    <div class="box_02"></div>
+        Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+        Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.<br>
 
-    <!-- example 03 -->
-    <div class="ment_box">
-      이처럼 직접 margin 값을 일일히 다 계산해가면서 만들어주지 않고,<br />
-      컴퓨터에게(브라우져에게) '알아서 간격조정 해'라고 시키기 위해 만들어진
-      것이<br />
-      FLEX BOX 이다!
-    </div>
-
-    <style>
-      .father_03 {
-        display: flex;
-      }
-
-      .box_03 {
-        width: 300px;
-        height: 300px;
-        background-color: yellow;
-      }
-    </style>
-
-    <div class="father_03">
-      <div class="box_03"></div>
-      <div class="box_03"></div>
-      <div class="box_03"></div>
-    </div>
-
-    <!-- example 04 -->
-    <div class="ment_box">
-      Flex box는 justify-content 라는 속성으로 여러가지 속성값을 주면서 설정 할
-      수 있다.
-    </div>
-
-    <style>
-      .father_04 {
-        display: flex;
-
-        /* flex에는 main-axis와 cross axis가 있다. 이를 역으로 바꿔주려면, flex-direction: column을 사용하면 된다.*/
-
-        /* 좌우로 정렬 시켜주는 속성(main-axis) */
-        justify-content: flex-start; /*디폴트*/
-        /* justify-content: flex-end; */
-        /* justify-content: space-between; */
-        /* justify-content: space-around; */
-
-        /* 수직으로 정렬 시켜주는 속성(cross-axis) */
-        /* Flexbox는 height값과 width 값을 기준으로 정렬을 해주기 때문에, 좌우가 됐건 상하가 됐건 father가 자기의 값을 가지고 있어야만 제대로 작동한다. */
-        /* height: 100vh; */
-        align-items: center;
-      }
-
-      .box_04 {
-        width: 300px;
-        height: 300px;
-        background-color: black;
-        border: 2px solid red;
-      }
-    </style>
-
-    <div class="father_04">
-      <div class="box_04"></div>
-      <div class="box_04"></div>
-      <div class="box_04"></div>
-    </div>
-
-    <!-- example 05 -->
-    <div class="ment_box">
-      Flex Wrap?<br />
-      box들 끼리 공간이 부족할 때 알아서 찌그러지는 현상을 제어하기 위한
-      속성이다.
-    </div>
-
-    <style>
-      .father_05 {
-        display: flex;
-        justify-content: center;
-        height: 100vh;
-
-        /* 아래 flex-wrap 속성이 먹혔을때와 그렇지 않을 때 브라우져 크기를 줄여보면 그 효과를 알 수 있다. */
-        /* flex-wrap: wrap; */
-      }
-
-      .box_05 {
-        width: 300px;
-        height: 300px;
-        background-color: green;
-        border: 2px solid red;
-      }
-    </style>
-
-    <div class="father_05">
-      <div class="box_05"></div>
-      <div class="box_05"></div>
-      <div class="box_05"></div>
-    </div>
-
-    <!-- example 06 -->
-    <div class="ment_box">
-      div 안에 있는 텍스트의 정렬도 flex로 조정할 수 있다.
-    </div>
-
-    <style>
-      .father_06 {
-        display: flex;
-        justify-content: space-between;
-        height: 100vh;
-        flex-wrap: wrap;
-      }
-
-      .box_06 {
-        width: 300px;
-        height: 300px;
-        background-color: brown;
-        border: 2px solid black;
-
-        color: #fff;
-        font-size: 1.5em;
-
-        /* 부모div 만이 아니라 자식 div 한테도 각각 flex 속성을 줘서, 텍스트에 끼치는 영향을 알 수 있다. */
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
-      }
-    </style>
-
-    <div class="father_06">
-      <div class="box_06">1</div>
-      <div class="box_06">2</div>
-      <div class="box_06">3</div>
-      <div class="box_06">4</div>
-      <!-- <div class="box_06">5</div>
-      <div class="box_06">6</div>
-      <div class="box_06">7</div> -->
+        Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec
+        vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis
+        leo.
+        Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue
+        velit
+        cursus nunc,
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br>
+      
+        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede
+        justo,
+        fringilla vel, aliquet nec, vulputate eget, arcu.<br>
+      
+        In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+        tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br>
+      
+        Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis,
+        feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.<br>
+      
+        Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+        Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.<br>
+      
+        Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec
+        vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis
+        leo.
+        Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue
+        velit
+        cursus nunc,
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+        natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.<br>
+      
+        Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede
+        justo,
+        fringilla vel, aliquet nec, vulputate eget, arcu.<br>
+      
+        In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer
+        tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.<br>
+      
+        Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis,
+        feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.<br>
+      
+        Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus.
+        Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum.<br>
+      
+        Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec
+        vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis
+        leo.
+        Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue
+        velit
+        cursus nunc,
+      </div>
+      <div class="chatarea">
+        <!--  채팅 연계 -->
+        <a href="javascript:;" class="chat_open">
+          <div class="chatting_sol_wrap">
+            <div class="ani_wrap">
+              <div class="chat_mond">
+                <div class="chat_mondi_con">
+                  <div class="chat_mondi_con_img">
+                    <img src="images/ico_chatbot_body02.png" alt="몬디">
+                  </div>
+                  <div>인공지능<br>챗봇</div>
+                </div>
+                <img src="images/bg_chatbot_ball.png" alt="">
+              </div>
+              <!-- <div class="chat_bubble now_type2" style="opacity: 1; width: 338px; height: 30px; display: none;">
+                <span class="txt_chat01" style="display: inline-block; opacity: 1; visibility: visible;">말풍선을 눌러 "암보험 비교포인트"
+                  알아보세요</span>
+              </div> -->
+              <span class="txt_chat_last">
+                <span>말풍선을 눌러 "암보험 비교포인트" 알아보세요<em></em>
+                </span>
+              </span>
+            </div>
+          </div>
+        </a>
+        <div class="chatbotClose">
+          <a href="#" class="btnClose"><img src="images/bg_chat_close.png" alt="인공지능 챗봇 닫기"></a>
+        </div>
+      </div>
     </div>
   </body>
+
 </html>
