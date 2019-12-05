@@ -1,5 +1,9 @@
 $(document).ready(function () {
-  setTimeout(function () { $('.chatarea').animate({ opacity: '1' }, 1500);}, 1000)
+  setTimeout(function () { $('.chatarea').animate({ opacity: '1' }, 1500); }, 1000)
+});
+
+$(document).on("click", ".btnClose", function () {
+  $(".chatarea").css("display", "none");
 });
 
 /*
