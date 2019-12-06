@@ -1,9 +1,9 @@
 $(document).ready(function () {
-  setTimeout(function () { $('.chatarea').animate({ opacity: '1' }, 1500); }, 1000)
+  setTimeout(function () { $('.chatbotArea').animate({ opacity: '1' }, 1500); }, 1000)
 });
 
-$(document).on("click", ".btnClose", function () {
-  $(".chatarea").css("display", "none");
+$(document).on("click", ".chatbotClose", function () {
+  $(".chatbotArea").css("display", "none");
 });
 
 /*
