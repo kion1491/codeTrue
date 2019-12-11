@@ -1,5 +1,21 @@
 $(document).ready(function () {
   setTimeout(function () { $('.chatbotArea').animate({ opacity: '1' }, 1500); }, 1000)
+
+  var mentArray = [
+                    ["ment_wave_01(sub_ment_01)", "ment_wave_01(sub_ment_02)", "ment_wave_01(main_ment!!!!!!!!!!!!!!!!)"],
+                    ["ment_wave_02(sub_ment_01)", "ment_wave_02(sub_ment_02)", "ment_wave_02(main_ment!!!!!!!!!!!!!!!!)"],
+                    ["ment_wave_03(sub_ment_01)", "ment_wave_03(sub_ment_02)", "ment_wave_03(main_ment!!!!!!!!!!!!!!!!)"]
+                  ]
+
+  // var mentarea = $(".mentarea").attr("class");
+  // console.log();
+  
+  for(var i=0; i<mentArray.length; i++){
+    for(var z=0; z<mentArray[i].length; z++){
+      
+    }
+  }
+
 });
 
 $(document).on("click", ".chatbotClose", function () {
