@@ -6,11 +6,11 @@
   box-shadow: 3px 10px 18px rgba(0, 0, 0, 0.2);
   height: 26px;
   top: 20px;
-  transform: scaleX(0);
-  animation: ment 5s 3.5s 1 ease-out alternate;
+  /* transform: scaleX(0); */
+  /* animation: ment 5s 3.5s 1 ease-out alternate; */
 }
 .chatbot_area .mentarea .ment_wave{line-height: 0;}
-.chatbot_area .mentarea .ment_wave .sub_ment{} 
+.chatbot_area .mentarea .ment_wave p{display: none;}
 .chatbot_area .mentarea .ment_wave .main_ment{display: none;}
 .chatbot_area .mentarea .ment_wave .main_ment em{}
 
