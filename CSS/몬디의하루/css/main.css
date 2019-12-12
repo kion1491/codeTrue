@@ -32,6 +32,12 @@
 
 @keyframes ment{
   0%{transform: scaleX(0);}
-  3%,97%{transform: scaleX(1); transform-origin: 100% 0%;}
+  5%,90%{transform: scaleX(1); transform-origin: 100% 0%;}
+  100%{transform: scaleX(0); transform-origin: 100% 0%;}
+}
+
+@keyframes ment_main{
+  0%{transform: scaleX(0);}
+  2%,98%{transform: scaleX(1); transform-origin: 100% 0%;}
   100%{transform: scaleX(0); transform-origin: 100% 0%;}
 }
